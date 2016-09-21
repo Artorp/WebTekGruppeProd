@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="129"
+   height="128"
+   viewBox="0 0 129 128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ArkadenLogo.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="6.9013911"
+     inkscape:cy="72.286737"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-348.77148,-409.37469)">
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 404.6543,420.79673 c 0,0 -3.47401,3.47234 -3.53711,9.72266 0.47953,5.43465 4.86419,8.98969 4.98828,12.05859 0.12509,3.09364 -1.51563,9.1543 -1.51563,9.1543 0,0 3.66271,-5.24006 3.59961,-9.53321 -0.0631,-4.29315 -4.48242,-8.52232 -4.48242,-11.74218 0,-3.21986 0.94727,-9.66016 0.94727,-9.66016 z m 8.71093,9.84961 c 0,0 -3.66151,2.27116 -3.72461,8.52148 0.47953,5.43465 4.99115,7.53853 5.11524,10.60743 0.12509,3.09364 -1.76953,6.50195 -1.76953,6.50195 0,0 3.85216,-3.02912 3.78906,-7.32227 -0.0631,-4.29315 -4.29297,-7.70201 -4.29297,-10.92187 0,-3.21986 0.88281,-7.38672 0.88281,-7.38672 z m -16.44531,0.30469 c 0,0 -3.66151,2.27311 -3.72461,8.52343 0.47953,5.43465 4.98919,7.53853 5.11328,10.60743 0.12509,3.09364 -1.76758,6.50195 -1.76758,6.50195 0,0 3.85217,-3.02912 3.78907,-7.32227 -0.0631,-4.29315 -4.29492,-7.70396 -4.29492,-10.92382 0,-3.21986 0.88476,-7.38672 0.88476,-7.38672 z m 31.88281,27.21093 -43.5625,0.12696 3.66211,35.10351 8.33399,0.125 8.96484,12.12305 -0.75781,-12.12305 20.96094,0.75782 0.70703,-10.64063 0.68164,0.0352 c 13.51079,-0.12627 13.50976,-9.21905 13.50976,-12.88086 0,-3.6618 -2.71421,-9.15405 -7.82812,-10.73242 -1.32331,-0.33145 -2.9661,-0.63599 -4.74024,-0.86524 l 0.0684,-1.0293 z m 0.25196,6.0625 c 7.57614,-0.12627 7.19796,5.30255 7.32421,7.07032 0.11753,1.6454 0.33251,7.5488 -8.90234,6.83203 l 0.92188,-13.88281 c 0.2691,-0.006 0.36177,-0.0146 0.65625,-0.0195 z"
+       id="path4147"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:29.62358856px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="362.00879"
+       y="525.72125"
+       id="text4176"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4178"
+         x="362.00879"
+         y="525.72125"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Lobster;-inkscape-font-specification:Lobster">Arkaden</tspan></text>
+  </g>
+</svg>
