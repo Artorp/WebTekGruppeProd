@@ -22,11 +22,18 @@ Filename: P2_design.html
 		<main>
 			<section>
 				<h2>Administrasjonsdetaljer</h2>
-				<p>Rakel Ragnadotter, daglig leder og eier</p>
+				<p>Rakel Ragnadotter</p>
+				<p>Stilling: Daglig leder og eier</p>
+				<p>Bedriftens navn: Arkaden kafé</p>
+				
 			</section>
 			<section>
 				<h2>Mening, Mål, og Målgruppe</h2>
-				<p>Meningen med siden er å gi nye kunder relevant informasjon, og samtidig gi dem lyst til å besøke kafeen. Faste kunder skal også kunne finne relevant informasjon her. Dermed blir målet med siden å gi kunden en intuitiv måte å lett finne informasjon, og samtidig engasjere dem med forskjellige arrangementer. Målgruppen er hovedsaklig studenter som er interessert i eldre spillkultur og arkademaskiner, men vi vil også appelere til en eldre målgruppe, og de som er mindre interessert i spillkulturen</p>
+				<p>Meningen med nettsiden er først og fremst em informasjons- og kontakt side. Siden skal tilby alt av relevant informasjon kunden kan trenge.
+				I tillegg så skal sidens design og innhold bidra til å gjøre både nye og gamle kunder nysgjerrige og interessert i å besøke kafeen. 
+				Siden skal inneholde praktisk informasjon som åpningstider osv, men også friste med arrangementer og lekre bakster. 
+				Målgruppa til nettsida (og kafeen) vil først og fremst være unge voksne/ studenter. Men det regnes også med at konseptet blir populært for barn fra 10-års alderen og oppover på dagtid.
+				Både folk som besøker kaffeen mest for en koselig kveld, et par pils og kanskje et flipperspill eller to, og de som er sterkt engasjert i arkadespill kommer til å besøke siden.</p>
 			</section>
 			<section>
 				<h2>Navigasjonsstruktur</h2>
@@ -34,15 +41,26 @@ Filename: P2_design.html
 			</section>
 			<section>
 				<h2>Sidedesign og Utseende</h2>
-				<p>Målet med siden er...</p>
+				<p>I utviklingen av en universell design er det viktig for oss at nettsiden skal være lett å navigere og gi god oversikt til brukeren. Vi vil at besøkende lett skal kunne finne nøkkelinformasjon som åpningstider og lokalisasjon; samtidig skal vi legge opp til at informasjon om kaféen og hva den kan tilby skal være bare ett tastetrykk unna. Vi har som mål at det skal være mulig å navigere til en annen side med maks to tastetrykk. Her er navigasjonsbaren essensiell, den skal være synlig for brukerne når de scroller ned og vil ha lenker til alle andre sider.</p>
+				<p>Navbaren vil inneholde lenker til et bredt spekter av sider så alle besøkende vil finne hva de trenger gjennom den. "Hjem" vil være en generell introduksjon til kaféen, "Kontakt oss" vil la besøkende komme i kontakt med vår klient, "Om kaféen" vil gi besøkende lett bakhostorie, "Om maskinene" vil introdusere og gi informasjon om arkademaskinene, "Servering" gir en oversikt av hva som serveres, "Arrangementer" gir en oversikt over oppkommende arrangementer, "Bildegalleri" vil være en kollasjon av bilder, "Jobb hos oss" vil la jobbsøkere får en oversikt over hvilke jobber som finnes og hvordan man kan søke.</p>
 				<figure>
 					<a href="mockups/generic_features.png"><img src="mockups/generic_features.png" alt="Generisk side" title="Klikk bildet for full størrelse"></a>
 					<figcaption>Eksempelbilde av en generisk side</figcaption>
 				</figure>
 				<p>Stylingen som vi bruker på alle sidene er som følger:</p>
 				<ul>
-					<li>Font:</li>
-					<li>Farge:</li>
+					<li>Skrifttype: "Open Sans" for headers med fallback til sans-serif, og "Lora" for html-kroppen med fallback serif.</li>
+					<li>Farger:
+						<li>Tekst: Svart</li>
+						<li>Bakgrunn: "Kaffe latte", a la #e4d3c2 blandet med ett tekstur.</li>
+						<li>Lenker: Nær svart, #232323, understreket. Når pekeren hoverer, fjern understrek og gjør helt svart #000000. Samme farge for besøkte lenker.</li>
+						<li>Skygger: Vi unngår bruk av skygger mellom elementer (header, main, footer), men bilder skal ha litt skygge når de blir hovert over.</li>
+					</li>
+					<li>Hovedinnhold bredde: 1200px max, men bredden skal bli skalert ned i respons til om brukeren har mindre bredde på sin enhet.</li>
+					<li>Header navbar, lenker: Navbaren skal være lett tilgjengelig og skal ha linker til de viktigste sidene. Navbaren skal være synlig for brukere når de scroller nedover; i utgangspunktet ved at den alltid er synlig, men gjerne ved at den popper til syne når man scroller opp. Den vil endre form dersom brukerens bredde skaleres ned for å unngå at alle elementene ikke får plass. Dersom brukerens bredde er smal vil menyen kollapse til en vertikal meny.</li>
+					<li>Banner: Alle sidene vil ha ett stort bilde øverst. Bildet skal passe til sidens tema, og ha en passende lisens.</li>
+					<li>Footer: Arkaden Kafé | Adresse | (C) Copyright 2016 Webtek Group, LCC</li>
+					<li>Bakgrunnsbilde: Vi vil bruke et tekstur lignende en gipset vegg.</li>
 				</ul>
 			</section>
 			<section>
