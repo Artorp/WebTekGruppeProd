@@ -12,6 +12,24 @@ Filename: P2_design.html
 		<title>P2 Design</title>
 		<link rel="icon" type="image/png" href="img/arkaden_32x32.png">
 		<link rel="stylesheet" type="text/css" href="css/P2_style.css" />
+		<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 	</head>
 	<body>
 		<header>
@@ -155,8 +173,8 @@ Filename: P2_design.html
 				<h2>Minimumskrav</h2>
 				<p>Vi vil oppfylle minimumskravene til javaskript på disse måtene:</p>
 				<ol>
-					<li>En funksjon som <em>"sticker"</em> navbaren til toppen av siden, slik at navigasjonen er lett tilgjengelig.</li>
-					<li>En funksjon som scroller brukeren ned på siden.</li>
+					<li>Banneren skal fade ut.</li>
+					<li>Sjekke at alle feltene i jobbsøknaden er fylt ut.</li>
 					<li>Bildegalleriet.</li>
 					<li>Mulighet å ha ett modult vindu når man klikker på bilder.</li>
 					<li>Headeren ruller gjennom flere forskjellige bilder.</li>
@@ -164,7 +182,164 @@ Filename: P2_design.html
 			</section>
 			<section>
 				<h2>Aksjonsplan</h2>
-				<p>Paragraf</p>
+				<table>
+					<tr>
+						<th>Filnavn</th>
+						<th>Beskrivelse</th>
+						<th>Ansvarlig</th>
+						<th>Deadline</th>
+					</tr>
+					<tr>
+						<th>index.html</th>
+						<th>hovedsiden</th>
+						<th>Thomas</th>
+						<th>11.10.16</th>
+					</tr>
+					<tr>
+						<th>contact.html</th>
+						<th>Kontaktinfo</th>
+						<th>Thomas</th>
+						<th>14.10.16</th>
+					</tr>
+					<tr>
+						<th>about.html</th>
+						<th>Gjennomgående informasjon om kafeen</th>
+						<th>Hans</th>
+						<th>11.10.16</th>
+					</tr>
+					<tr>
+						<th>about2.html</th>
+						<th>Informasjon om arkademaskinene i kafeen</th>
+						<th>Hans</th>
+						<th>14.10.16</th>
+					</tr>
+					<tr>
+						<th>servering.html</th>
+						<th>Informasjon om hvilke varer som selges og alergiinformasjon</th>
+						<th>Helle</th>
+						<th>11.10.16</th>
+					</tr>
+					<tr>
+						<th>arrangementer.html</th>
+						<th>Informasjon om kommende arrangementer og eventuell pris</th>
+						<th>Helle</th>
+						<th>14.10.16</th>
+					</tr>
+					<tr>
+						<th>gallery.html</th>
+						<th>Et bildegalleri</th>
+						<th>Andreas</th>
+						<th>11.10.16</th>
+					</tr>
+					<tr>
+						<th>jobs.html</th>
+						<th>Informasjon om ledige stillinger og hva som kreves av arbeidstaker</th>
+						<th>Tor</th>
+						<th>11.10.16</th>
+					</tr>
+					<tr>
+						<th>jobs_application.html</th>
+						<th>En side der folk kan sende inn jobbsøknader</th>
+						<th>Tor</th>
+						<th>14.10.16</th>
+					</tr>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>gallery.js</th>
+						<th>For å få bildene til å rulere</th>
+						<th>Andreas</th>
+						<th>25.10.16</th>
+					</tr>
+					<tr>
+						<th>fade.js</th>
+						<th>Banneren skal fade ut</th>
+						<th>Thomas</th>
+						<th>25.10.16</th>
+					</tr>
+					<tr>
+						<th>rotatePictures.js</th>
+						<th>Headerbildet skal rulere mellom 3-4 bilder</th>
+						<th>Hans, Helle</th>
+						<th>25.10.16</th>
+					</tr>
+					<tr>
+						<th>poppup.js</th>
+						<th>Et modult bilde skal opooe opp når man klikker på bildet</th>
+						<th>Hans, Helle</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>checkForEmptyFields.js</th>
+						<th>Sjekker om noen av informasjonsfeltene i søknaden er tomme og stopper brukeren hvis de er det</th>
+						<th>Tor</th>
+						<th>25.10.16</th>
+					</tr>
+					<tr>
+						<th>main.css</th>
+						<th>Hovedstylingen som alle sidene skal bruke</th>
+						<th>Alle</th>
+						<th>31.10.16</th>
+					</tr>
+					<tr>
+						<th>index.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Thomas</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>contact.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Thomas</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>about.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Hans</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>sbout2.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Hans</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>servering.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Helle</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>arrangementer.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Helle</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>gallery.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Andreas</th>
+						<th>18.10.16</th>
+					</tr>
+					<tr>
+						<th>jobs.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Tor</th>
+						<th></th>
+					</tr>
+					<tr>
+						<th>jobs_aplications.css</th>
+						<th>Styling som siden skal bruke</th>
+						<th>Tor</th>
+						<th>18.10.16</th>
+					</tr>
+				</p>
 			</section>
 		</main>
 		<footer>
