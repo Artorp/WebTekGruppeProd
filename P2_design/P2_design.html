@@ -22,11 +22,18 @@ Filename: P2_design.html
 		<main>
 			<section>
 				<h2>Administrasjonsdetaljer</h2>
-				<p>Rakel Ragnadotter, daglig leder og eier</p>
+				<p>Rakel Ragnadotter</p>
+				<p>Stilling: Daglig leder og eier</p>
+				<p>Bedriftens navn: Arkaden kafé</p>
+				
 			</section>
 			<section>
 				<h2>Mening, Mål, og Målgruppe</h2>
-				<p>Meningen med siden er å gi nye kunder relevan informasjon, og samtidig gi dem lyst til å besøke kafeen. Faste kunder skal også kunne finne relevant informasjon der. Dermed blir målet med sidenå gi kunden en intuitiv måte å lett finne informasjon, og samtidig engasjere dem med forskjellige arrangementer. Målgruppen er hovedsaklig studenter som er interessert i eldre spillkultur og arkademaskiner, men vi vil også appelere til de som er eldre enn det, og de som er mindre interessert i spillkulturen</p>
+				<p>Meningen med nettsiden er først og fremst em informasjons- og kontakt side. Siden skal tilby alt av relevant informasjon kunden kan trenge.
+				I tillegg så skal sidens design og innhold bidra til å gjøre både nye og gamle kunder nysgjerrige og interessert i å besøke kafeen. 
+				Siden skal inneholde praktisk informasjon som åpningstider osv, men også friste med arrangementer og lekre bakster. 
+				Målgruppa til nettsida (og kafeen) vil først og fremst være unge voksne/ studenter. Men det regnes også med at konseptet blir populært for barn fra 10-års alderen og oppover på dagtid.
+				Både folk som besøker kaffeen mest for en koselig kveld, et par pils og kanskje et flipperspill eller to, og de som er sterkt engasjert i arkadespill kommer til å besøke siden.</p>
 			</section>
 			<section>
 				<h2>Navigasjonsstruktur</h2>
@@ -34,14 +41,26 @@ Filename: P2_design.html
 			</section>
 			<section>
 				<h2>Sidedesign og Utseende</h2>
-				<p>Målet med siden er...</p>
+				<p>I utviklingen av en universell design er det viktig for oss at nettsiden skal være lett å navigere og gi god oversikt til brukeren. Vi vil at besøkende lett skal kunne finne nøkkelinformasjon som åpningstider og lokalisasjon; samtidig skal vi legge opp til at informasjon om kaféen og hva den kan tilby skal være bare ett tastetrykk unna. Vi har som mål at det skal være mulig å navigere til en annen side med maks to tastetrykk. Her er navigasjonsbaren essensiell, den skal være synlig for brukerne når de scroller ned og vil ha lenker til alle andre sider.</p>
+				<p>Navbaren vil inneholde lenker til et bredt spekter av sider så alle besøkende vil finne hva de trenger gjennom den. "Hjem" vil være en generell introduksjon til kaféen, "Kontakt oss" vil la besøkende komme i kontakt med vår klient, "Om kaféen" vil gi besøkende lett bakhostorie, "Om maskinene" vil introdusere og gi informasjon om arkademaskinene, "Servering" gir en oversikt av hva som serveres, "Arrangementer" gir en oversikt over oppkommende arrangementer, "Bildegalleri" vil være en kollasjon av bilder, "Jobb hos oss" vil la jobbsøkere får en oversikt over hvilke jobber som finnes og hvordan man kan søke.</p>
 				<figure>
-					<a href="mockups/generic_features.png"><img src="mockups/generic_features.png" alt="generisk_side" title="Klikk bildet for full størrelse"></a>
+					<a href="mockups/generic_features.png"><img src="mockups/generic_features.png" alt="Generisk side" title="Klikk bildet for full størrelse"></a>
 					<figcaption>Eksempelbilde av en generisk side</figcaption>
 				</figure>
-				<p>Stylingen for siden som vi bruker på alle sidene er som følger:</p>
+				<p>Stylingen som vi bruker på alle sidene er som følger:</p>
 				<ul>
-					<li>Font: </li>
+					<li>Skrifttype: "Open Sans" for headers med fallback til sans-serif, og "Lora" for html-kroppen med fallback serif.</li>
+					<li>Farger:
+						<li>Tekst: Svart</li>
+						<li>Bakgrunn: "Kaffe latte", a la #e4d3c2 blandet med ett tekstur.</li>
+						<li>Lenker: Nær svart, #232323, understreket. Når pekeren hoverer, fjern understrek og gjør helt svart #000000. Samme farge for besøkte lenker.</li>
+						<li>Skygger: Vi unngår bruk av skygger mellom elementer (header, main, footer), men bilder skal ha litt skygge når de blir hovert over.</li>
+					</li>
+					<li>Hovedinnhold bredde: 1200px max, men bredden skal bli skalert ned i respons til om brukeren har mindre bredde på sin enhet.</li>
+					<li>Header navbar, lenker: Navbaren skal være lett tilgjengelig og skal ha linker til de viktigste sidene. Navbaren skal være synlig for brukere når de scroller nedover; i utgangspunktet ved at den alltid er synlig, men gjerne ved at den popper til syne når man scroller opp. Den vil endre form dersom brukerens bredde skaleres ned for å unngå at alle elementene ikke får plass. Dersom brukerens bredde er smal vil menyen kollapse til en vertikal meny.</li>
+					<li>Banner: Alle sidene vil ha ett stort bilde øverst. Bildet skal passe til sidens tema, og ha en passende lisens.</li>
+					<li>Footer: Arkaden Kafé | Adresse | (C) Copyright 2016 Webtek Group, LCC</li>
+					<li>Bakgrunnsbilde: Vi vil bruke et tekstur lignende en gipset vegg.</li>
 				</ul>
 			</section>
 			<section>
@@ -49,59 +68,99 @@ Filename: P2_design.html
 				<p>Vi vil ha disse ni sidene:</p>
 				<ol>
 					<li>
-						Hjemmesiden - <em>index.html</em>
+						<p>Hjemmesiden - <em>index.html</em></p>
 						<p>Formålet til hovedsiden er hovedsaklig å kapre lesernes oppmerksomhet og nysgjerrighet på kortest mullig tid. Samtidig er det viktig at hovedsiden er ryddig, praktisk og estetisk tiltalende. Denne siden vil fungere som en kort introduksjon til kaféen og gi gjesten lyst til å besøke nettopp dette stedet!</p>
 						<p>Ut i fra denne siden må gjesten skjønne at dette er en kafé som tilbyr mat og drikke, samt arkademaskiner.</p>
 						<p>Også lokasjon er viktig å inkludere på denne siden. Men det må inkluderes på en måte som ikke overkompliserer siden, slik at besøkende som har søkt etter Arkaden for å finne rask informasjon får det. Lesere som ønsker mer informasjon om kaféen kan trykke på en link som fører til "Om Oss"-siden.</p>
 						<figure>
-							<a href="mockups/index.png"><img src="mockups/index.png" alt="hjemmesiden" title="Klikk bildet for full størrelse"></a>
+							<a href="mockups/index.png"><img src="mockups/index.png" alt="Hjemmesiden" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av index.html</figcaption>
 						</figure>
 					</li>
 					<li>
-						Kontakt Oss - <em>contact.html</em>
+						<p>Kontakt Oss - <em>contact.html</em></p>
 						<p>Denne siden vil inneholde (fiktiv) kontaktinformasjon til kaféen.</p>
 						<p>Gjester kan bruke denne kontaktinformasjonen til å komme i kontakt med klienten vår. Dette vil inkludere et telefonnr., epostadresse, og en link til en Facebook-side.</p>
-						<p>Organisasjonsnummer kan også bli lagt til, som bevis på at bedriften er ekte (noe den ikke er). Gjester vil også finne en adresse slik at de kan finne fram til kaféen. Om mulig, ønsker vi å legge til en Google Maps markering.</p>
+						<p>Organisasjonsnummer kan også bli lagt til, som bevis på at bedriften er ekte (noe den ikke er). Gjester vil også finne en adresse slik at de kan finne fram til kaféen. Om mulig, ønsker vi å legge til en Google Maps-markering.</p>
 						<figure>
 							<a href="mockups/contact.png"><img src="mockups/contact.png" alt="hjemmesiden" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av contact.html</figcaption>
 						</figure>
 					</li>
 					<li>
-						Om Kaféen
-					</li>
-					<li>
-						Om Maskinene
-					</li>
-					<li>
-						Servering
-					</li>
-					<li>
-						Arrangementer
-					</li>
-					<li>
-						Bildegalleri
-					</li>
-					<li>
-						Jobb
+						<p>Om Kaféen - <em>about.html</em></p>
+						<p>Denne siden vil gi en mer gjennomgående introduksjon til hva Arkaden handler om. Hva som tilbys, lokasjon, historie, og annen god PR. 						Leseren skal kunne finne alt dette på denne siden.
+						Akkurat som forsiden, skal denne siden klart kommunisere at kaféen både har arkademaskiner, selger hjemmelagd bakst/drikker,
+						og er lokalisert sentralt i Trondheim. </p>
 						<figure>
-							<a href="mockups/Sokjobb.png"><img src="mockups/Sokjobb.png" alt="side for aa soke på jobb" title="Klikk bildet for full størrelse"></a>
-							<figcaption>Eksempelbilde for informasjon on jobbsoknad.html</figcaption>
+							<a href="mockups/about_om-arkaden.png"><img src="mockups/about_om-arkaden.png" alt="Arkaden" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av about.html</figcaption>
 						</figure>
 					</li>
 					<li>
-						Søknadsside
+						<p>Om maskinene - <em>about2.html</em></p>
+						<p>Denne siden presenterer hvilke typer maskiner som finnes på Arkaden (pinball, “vanlige arkademaskiner”, osv.).</p>
+						<p>Navnet på en del av spillene må med, ettersom en del kunder muligens er ute etter å spille noe spesifikt. Informasjon om at maskinene er gratis å bruke for gjester (eller eventuell pris) skal man finne på denne siden. Det er også naturlig å ha noen bilder av maskinene her.</p>
 						<figure>
-							<a href="mockups/Jobbsoknad.png"><img src="mockups/Jobbsoknad.png" alt="soknadsside for jobb" title="Klikk bildet for full størrelse"></a>
-							<figcaption>Eksempelbilde av jobbsoknad.html</figcaption>
+							<a href="mockups/about2_om-maskinene.png"><img src="mockups/about2_om-maskinene.png" alt="Arkademaskinene" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av about2.html</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>Servering - <em>servering.html</em></p>
+						<p>På denne siden vil det være en liste med matvarene vi selger, samt relevant informasjon om råvarene som er i de forskjellige varene,
+						slik at personer med allergier lett kan finne ut hva de ikke bør spise. Her kan det også komme informasjon om råvarer og leverandører. </p>
+						<figure>
+							<a href="mockups/servering.png"><img src="mockups/servering.png" alt="Servering" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av servering.html</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>Arrangementer - <em>arrangementer.html</em></p>
+						<p>Her vil det være en intuitiv oversikt over kommende arrangementer med relevant informasjon som for eksempel dato og eventuell pris for å være med
+						Aldersgrense, tidspunk og mer informasjon.</p>
+						<figure>
+							<a href="mockups/arrangementer.png"><img src="mockups/arrangementer.png" alt="Arrangementer" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av Arrangementer.html</figcaption>
+						</figure>	
+					</li>
+					<li>
+						<p>Bildegalleri - <em>gallery.html</em></p>
+						<p>En samling av bilder av de ulike delene av kafeen. Bilder av de ulike maskinene, bilder av tidligere arrangement. Bilder av kafeen utenfra og bilder av disk/kasse/bar. Andre diverse bilder av kaféen; type bord, og andre koselige bilder for å skape stemning. Bilder presentert med en beskrivelse under og hyperlinker på toppen av siden for lettere navigering. Poenget er at man skal kunne bla gjennom bildenesom er i de svarte boksene. De grønne pilene skal være trykkbare knapper.</p>
+						<figure>
+							<a href="mockups/bildegalleri.png"><img src="mockups/bildegalleri.png" alt="Bildegalleri" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av gallery.html</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>Jobb - <em>jobs.html</em></p>
+						<p>Her vil brukeren kunne finne informasjon om ledige stillinger. Her står det hva man får ut av å jobbe på Arkaden, og hva Rakel ser etter i en arbeidstaker. Her ligger det også en link til en søknadsside.</p>
+						<figure>
+							<a href="mockups/jobs.png"><img src="mockups/jobs.png" alt="Side for å søke på jobb" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av jobs.html</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>Jobbsøknad - <em>jobs_application.html</em></p>
+						<p>Dette er siden søkere bruker for å sende inn sin søknad. Denne siden vil skille seg litt fra de andre sidene ved at den ikke har en egen navigasjonslink og vil kun bli linket til fra jobbsiden.</p>
+						<p>Vi vil i dette prosjektet bare utvikle frontend for denne, og informasjonen vil bli sendt til en ikke-eksisterende server.</p>
+						<figure>
+							<a href="mockups/jobs_application.png"><img src="mockups/jobs_application.png" alt="Søknadsside for jobb" title="Klikk bildet for full størrelse"></a>
+							<figcaption>Eksempelbilde av jobs_application.html</figcaption>
 						</figure>
 					</li>
 				</ol>
 			</section>
 			<section>
 				<h2>Minimumskrav</h2>
-				<p>Paragraf</p>
+				<p>Vi vil oppfylle minimumskravene til javaskript på disse måtene:</p>
+				<ol>
+					<li>En funksjon som <em>"sticker"</em> navbaren til toppen av siden, slik at navigasjonen er lett tilgjengelig.</li>
+					<li>En funksjon som scroller brukeren ned på siden.</li>
+					<li>Bildegalleriet.</li>
+					<li>Mulighet å ha ett modult vindu når man klikker på bilder.</li>
+					<li>Headeren ruller gjennom flere forskjellige bilder.</li>
+				</ol>
 			</section>
 			<section>
 				<h2>Aksjonsplan</h2>
