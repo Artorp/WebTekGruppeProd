@@ -1,0 +1,14 @@
+/* Filename: main.css */
+
+/* Import Google Fonts */
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+/* CSS styling */
+html {
+    font-family: 'Lora', serif;
+    font-size: 1.25em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open sans", sans-serif;
+}
