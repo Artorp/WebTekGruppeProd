@@ -10,26 +10,8 @@ Filename: P2_design.html
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile viewport -->
 		<title>P2 Design</title>
-		<link rel="icon" type="image/png" href="img/arkaden_32x32.png">
+		<link rel="icon" type="image/png" href="images/arkaden_32x32.png">
 		<link rel="stylesheet" type="text/css" href="css/P2_style.css" />
-		<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 14px;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
 	</head>
 	<body>
 		<header>
@@ -43,36 +25,42 @@ tr:nth-child(even) {
 				<p>Rakel Ragnadotter</p>
 				<p>Stilling: Daglig leder og eier</p>
 				<p>Bedriftens navn: Arkaden kafé</p>
-				
 			</section>
 			<section>
 				<h2>Mening, Mål, og Målgruppe</h2>
-				<p>Meningen med nettsiden er først og fremst em informasjons- og kontakt side. Siden skal tilby alt av relevant informasjon kunden kan trenge.
-				I tillegg så skal sidens design og innhold bidra til å gjøre både nye og gamle kunder nysgjerrige og interessert i å besøke kafeen. 
-				Siden skal inneholde praktisk informasjon som åpningstider osv, men også friste med arrangementer og lekre bakster. 
-				Målgruppa til nettsida (og kafeen) vil først og fremst være unge voksne/ studenter. Men det regnes også med at konseptet blir populært for barn fra 10-års alderen og oppover på dagtid.
-				Både folk som besøker kaffeen mest for en koselig kveld, et par pils og kanskje et flipperspill eller to, og de som er sterkt engasjert i arkadespill kommer til å besøke siden.</p>
+				<p>Meningen med nettsiden er først og fremst en informasjons- og kontakt side. Siden skal tilby alt av relevant informasjon kunden kan trenge.</p>
+				<p>I tillegg så skal sidens design og innhold bidra til å gjøre både nye og gamle kunder nysgjerrige og interessert i å besøke kafeen. Siden skal inneholde praktisk informasjon som åpningstider osv, men også friste med arrangementer og lekre bakster. Målgruppa til nettsida (og kafeen) vil først og fremst være unge voksne/ studenter. Men det regnes også med at konseptet blir populært for barn fra 10-års alderen og oppover på dagtid.</p>
+					<p>Både folk som besøker kaffeen mest for en koselig kveld, et par pils og kanskje et flipperspill eller to, og de som er sterkt engasjert i arkadespill kommer til å besøke siden.</p>
 			</section>
 			<section>
 				<h2>Navigasjonsstruktur</h2>
-				<p>Paragraf</p>
+				<p>Navigasjonsstrukturen er lagt opp til at alle sidene vil ha en lenke til alle andre sider. Lenkene gis via navbaren, og i enkelte tilfeller i hoverinnholdet på sidene.</p>
+				<p>Ett unntak er jobbsøknaden, som gjøres på en egen side uavhengig av de andre sidene. Jobbsøknadsida har blanketter som skal fylles ut, og skal tenkes som en seperat enhet av hovedsida. Den inkluderer ikke navbaren, men vil ha en linke tilbake til www.arkadenkafe.no.</p>
+				<p>Vår begrunnelse for å bruke denne navigasjonsstrukturen er å redusere antall klikk som kreves for å navigere til en annen side. Det skal være mulig å besøke forskjellige deler av siden gjennom navbaren.</p>
+				<figure>
+					<a href="images/Navigasjon.png"><img src="images/Navigasjon.png" alt="Navigasjon" title="Klikk bildet for full størrelse"></a>
+					<figcaption>Navigasjon på nettside</figcaption>
+				</figure>
 			</section>
 			<section>
 				<h2>Sidedesign og Utseende</h2>
 				<p>I utviklingen av en universell design er det viktig for oss at nettsiden skal være lett å navigere og gi god oversikt til brukeren. Vi vil at besøkende lett skal kunne finne nøkkelinformasjon som åpningstider og lokalisasjon; samtidig skal vi legge opp til at informasjon om kaféen og hva den kan tilby skal være bare ett tastetrykk unna. Vi har som mål at det skal være mulig å navigere til en annen side med maks to tastetrykk. Her er navigasjonsbaren essensiell, den skal være synlig for brukerne når de scroller ned og vil ha lenker til alle andre sider.</p>
 				<p>Navbaren vil inneholde lenker til et bredt spekter av sider så alle besøkende vil finne hva de trenger gjennom den. "Hjem" vil være en generell introduksjon til kaféen, "Kontakt oss" vil la besøkende komme i kontakt med vår klient, "Om kaféen" vil gi besøkende lett bakhostorie, "Om maskinene" vil introdusere og gi informasjon om arkademaskinene, "Servering" gir en oversikt av hva som serveres, "Arrangementer" gir en oversikt over oppkommende arrangementer, "Bildegalleri" vil være en kollasjon av bilder, "Jobb hos oss" vil la jobbsøkere får en oversikt over hvilke jobber som finnes og hvordan man kan søke.</p>
+				<p>En viktig del av siden er responsiv design, dersom brukeren bruker en tablet eller mobiltelefon med liten horisontal bredde vil vi unngå at brukeren må zoome eller scrolle horisontalt. Svaret er å innarbeide en responsive nettside. Navbaren, for eksempel, skal kollapse til en meny og holde seg øverst dersom bredden blir lav nok.</p>
 				<figure>
-					<a href="mockups/generic_features.png"><img src="mockups/generic_features.png" alt="Generisk side" title="Klikk bildet for full størrelse"></a>
+					<a href="images/generic_features.png"><img src="images/generic_features.png" alt="Generisk side" title="Klikk bildet for full størrelse"></a>
 					<figcaption>Eksempelbilde av en generisk side</figcaption>
 				</figure>
 				<p>Stylingen som vi bruker på alle sidene er som følger:</p>
 				<ul>
 					<li>Skrifttype: "Open Sans" for headers med fallback til sans-serif, og "Lora" for html-kroppen med fallback serif.</li>
 					<li>Farger:
-						<li>Tekst: Svart</li>
-						<li>Bakgrunn: "Kaffe latte", a la #e4d3c2 blandet med ett tekstur.</li>
-						<li>Lenker: Nær svart, #232323, understreket. Når pekeren hoverer, fjern understrek og gjør helt svart #000000. Samme farge for besøkte lenker.</li>
-						<li>Skygger: Vi unngår bruk av skygger mellom elementer (header, main, footer), men bilder skal ha litt skygge når de blir hovert over.</li>
+						<ul>
+							<li>Tekst: Svart</li>
+							<li>Bakgrunn: "Kaffe latte", a la #e4d3c2 blandet med ett tekstur.</li>
+							<li>Lenker: Nær svart, #232323, understreket. Når pekeren hoverer, fjern understrek og gjør helt svart #000000. Samme farge for besøkte lenker.</li>
+							<li>Skygger: Vi unngår bruk av skygger mellom elementer (header, main, footer), men bilder skal ha litt skygge når de blir hovert over.</li>
+						</ul>
 					</li>
 					<li>Hovedinnhold bredde: 1200px max, men bredden skal bli skalert ned i respons til om brukeren har mindre bredde på sin enhet.</li>
 					<li>Header navbar, lenker: Navbaren skal være lett tilgjengelig og skal ha linker til de viktigste sidene. Navbaren skal være synlig for brukere når de scroller nedover; i utgangspunktet ved at den alltid er synlig, men gjerne ved at den popper til syne når man scroller opp. Den vil endre form dersom brukerens bredde skaleres ned for å unngå at alle elementene ikke får plass. Dersom brukerens bredde er smal vil menyen kollapse til en vertikal meny.</li>
@@ -91,7 +79,7 @@ tr:nth-child(even) {
 						<p>Ut i fra denne siden må gjesten skjønne at dette er en kafé som tilbyr mat og drikke, samt arkademaskiner.</p>
 						<p>Også lokasjon er viktig å inkludere på denne siden. Men det må inkluderes på en måte som ikke overkompliserer siden, slik at besøkende som har søkt etter Arkaden for å finne rask informasjon får det. Lesere som ønsker mer informasjon om kaféen kan trykke på en link som fører til "Om Oss"-siden.</p>
 						<figure>
-							<a href="mockups/index.png"><img src="mockups/index.png" alt="Hjemmesiden" title="Klikk bildet for full størrelse"></a>
+							<a href="images/index.png"><img src="images/index.png" alt="Hjemmesiden" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av index.html</figcaption>
 						</figure>
 					</li>
@@ -101,7 +89,7 @@ tr:nth-child(even) {
 						<p>Gjester kan bruke denne kontaktinformasjonen til å komme i kontakt med klienten vår. Dette vil inkludere et telefonnr., epostadresse, og en link til en Facebook-side.</p>
 						<p>Organisasjonsnummer kan også bli lagt til, som bevis på at bedriften er ekte (noe den ikke er). Gjester vil også finne en adresse slik at de kan finne fram til kaféen. Om mulig, ønsker vi å legge til en Google Maps-markering.</p>
 						<figure>
-							<a href="mockups/contact.png"><img src="mockups/contact.png" alt="hjemmesiden" title="Klikk bildet for full størrelse"></a>
+							<a href="images/contact.png"><img src="images/contact.png" alt="hjemmesiden" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av contact.html</figcaption>
 						</figure>
 					</li>
@@ -111,7 +99,7 @@ tr:nth-child(even) {
 						Akkurat som forsiden, skal denne siden klart kommunisere at kaféen både har arkademaskiner, selger hjemmelagd bakst/drikker,
 						og er lokalisert sentralt i Trondheim. </p>
 						<figure>
-							<a href="mockups/about_om-arkaden.png"><img src="mockups/about_om-arkaden.png" alt="Arkaden" title="Klikk bildet for full størrelse"></a>
+							<a href="images/about_om-arkaden.png"><img src="images/about_om-arkaden.png" alt="Arkaden" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av about.html</figcaption>
 						</figure>
 					</li>
@@ -120,7 +108,7 @@ tr:nth-child(even) {
 						<p>Denne siden presenterer hvilke typer maskiner som finnes på Arkaden (pinball, “vanlige arkademaskiner”, osv.).</p>
 						<p>Navnet på en del av spillene må med, ettersom en del kunder muligens er ute etter å spille noe spesifikt. Informasjon om at maskinene er gratis å bruke for gjester (eller eventuell pris) skal man finne på denne siden. Det er også naturlig å ha noen bilder av maskinene her.</p>
 						<figure>
-							<a href="mockups/about2_om-maskinene.png"><img src="mockups/about2_om-maskinene.png" alt="Arkademaskinene" title="Klikk bildet for full størrelse"></a>
+							<a href="images/about2_om-maskinene.png"><img src="images/about2_om-maskinene.png" alt="Arkademaskinene" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av about2.html</figcaption>
 						</figure>
 					</li>
@@ -129,7 +117,7 @@ tr:nth-child(even) {
 						<p>På denne siden vil det være en liste med matvarene vi selger, samt relevant informasjon om råvarene som er i de forskjellige varene,
 						slik at personer med allergier lett kan finne ut hva de ikke bør spise. Her kan det også komme informasjon om råvarer og leverandører. </p>
 						<figure>
-							<a href="mockups/servering.png"><img src="mockups/servering.png" alt="Servering" title="Klikk bildet for full størrelse"></a>
+							<a href="images/servering.png"><img src="images/servering.png" alt="Servering" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av servering.html</figcaption>
 						</figure>
 					</li>
@@ -138,7 +126,7 @@ tr:nth-child(even) {
 						<p>Her vil det være en intuitiv oversikt over kommende arrangementer med relevant informasjon som for eksempel dato og eventuell pris for å være med
 						Aldersgrense, tidspunk og mer informasjon.</p>
 						<figure>
-							<a href="mockups/arrangementer.png"><img src="mockups/arrangementer.png" alt="Arrangementer" title="Klikk bildet for full størrelse"></a>
+							<a href="images/arrangementer.png"><img src="images/arrangementer.png" alt="Arrangementer" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av Arrangementer.html</figcaption>
 						</figure>	
 					</li>
@@ -146,7 +134,7 @@ tr:nth-child(even) {
 						<p>Bildegalleri - <em>gallery.html</em></p>
 						<p>En samling av bilder av de ulike delene av kafeen. Bilder av de ulike maskinene, bilder av tidligere arrangement. Bilder av kafeen utenfra og bilder av disk/kasse/bar. Andre diverse bilder av kaféen; type bord, og andre koselige bilder for å skape stemning. Bilder presentert med en beskrivelse under og hyperlinker på toppen av siden for lettere navigering. Poenget er at man skal kunne bla gjennom bildenesom er i de svarte boksene. De grønne pilene skal være trykkbare knapper.</p>
 						<figure>
-							<a href="mockups/bildegalleri.png"><img src="mockups/bildegalleri.png" alt="Bildegalleri" title="Klikk bildet for full størrelse"></a>
+							<a href="images/bildegalleri.png"><img src="images/bildegalleri.png" alt="Bildegalleri" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av gallery.html</figcaption>
 						</figure>
 					</li>
@@ -154,7 +142,7 @@ tr:nth-child(even) {
 						<p>Jobb - <em>jobs.html</em></p>
 						<p>Her vil brukeren kunne finne informasjon om ledige stillinger. Her står det hva man får ut av å jobbe på Arkaden, og hva Rakel ser etter i en arbeidstaker. Her ligger det også en link til en søknadsside.</p>
 						<figure>
-							<a href="mockups/jobs.png"><img src="mockups/jobs.png" alt="Side for å søke på jobb" title="Klikk bildet for full størrelse"></a>
+							<a href="images/jobs.png"><img src="images/jobs.png" alt="Side for å søke på jobb" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av jobs.html</figcaption>
 						</figure>
 					</li>
@@ -163,7 +151,7 @@ tr:nth-child(even) {
 						<p>Dette er siden søkere bruker for å sende inn sin søknad. Denne siden vil skille seg litt fra de andre sidene ved at den ikke har en egen navigasjonslink og vil kun bli linket til fra jobbsiden.</p>
 						<p>Vi vil i dette prosjektet bare utvikle frontend for denne, og informasjonen vil bli sendt til en ikke-eksisterende server.</p>
 						<figure>
-							<a href="mockups/jobs_application.png"><img src="mockups/jobs_application.png" alt="Søknadsside for jobb" title="Klikk bildet for full størrelse"></a>
+							<a href="images/jobs_application.png"><img src="images/jobs_application.png" alt="Søknadsside for jobb" title="Klikk bildet for full størrelse"></a>
 							<figcaption>Eksempelbilde av jobs_application.html</figcaption>
 						</figure>
 					</li>
@@ -181,7 +169,73 @@ tr:nth-child(even) {
 				</ol>
 			</section>
 			<section>
-				<h2>Aksjonsplan</h2>
+				<h2>Plan</h2>
+				<p>Vi vil følge et organisasjonsplan for hvilke filer som skal bli laget, og et arbeidsinndelingssjema for hvilke tidsfrister vi skal holde.</p>
+				<h3>Organisjonsplan</h3>
+				<p>Vi vil bruke Github.com til samarbeidet med produksjonen av filene. Filene vil bli lastet opp under en privat repo under mappen "main", og filene blir laget i kodingsfasen av prosjektet.</p>
+				<p>Liste over filer og mapper:</p>
+				<ul>
+					<li>index.html</li>
+					<li>contact.html</li>
+					<li>about.html</li>
+					<li>about2.html</li>
+					<li>servering.html</li>
+					<li>arrangementer.html</li>
+					<li>gallery.html</li>
+					<li>jobs.html</li>
+					<li>jobs_application.html</li>
+					<li>css/
+						<ul>
+							<li>main.css</li>
+							<li>index.css</li>
+							<li>contact.css</li>
+							<li>about.css</li>
+							<li>about2.css</li>
+							<li>servering.css</li>
+							<li>arrangementer.css</li>
+							<li>gallery.css</li>
+							<li>jobs.css</li>
+							<li>jobs_application.css</li>
+						</ul>
+					</li>
+					<li>scripts/
+						<ul>
+							<li>gallery.js</li>
+							<li>fade.js</li>
+							<li>rotatePictures.js</li>
+							<li>picturePopup.js</li>
+							<li>checkForEmptyFields.js</li>
+						</ul>
+					</li>
+					<li>img/
+						<ul>
+							<li>arkaden_32x32.png</li>
+							<li>background.png</li>
+							<li>banner1.jpg</li>
+							<li>banner2.jpg</li>
+							<li>banner3.jpg</li>
+							<li>banner4.jpg</li>
+							<li>banner5.jpg</li>
+							<li>banner6.jpg</li>
+							<li>banner7.jpg</li>
+							<li>banner8.jpg</li>
+							<li>gallery_1.jpg</li>
+							<li>gallery_2.jpg</li>
+							<li>gallery_3.jpg</li>
+							<li>gallery_4.jpg</li>
+							<li>gallery_5.jpg</li>
+							<li>gallery_6.jpg</li>
+							<li>gallery_7.jpg</li>
+						</ul>
+					</li>
+					<li>modularity/
+						<ul>
+							<li>navbar_part.html</li>
+							<li>footer_part.html</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>Arbeidsinndeling og tidsfrister</h3>
 				<table>
 					<tr>
 						<th>Filnavn</th>
@@ -190,156 +244,168 @@ tr:nth-child(even) {
 						<th>Deadline</th>
 					</tr>
 					<tr>
-						<th>index.html</th>
-						<th>hovedsiden</th>
-						<th>Thomas</th>
-						<th>11.10.16</th>
+						<td>index.html</td>
+						<td>Hovedsiden</td>
+						<td>Thomas</td>
+						<td>11.10.16</td>
 					</tr>
 					<tr>
-						<th>contact.html</th>
-						<th>Kontaktinfo</th>
-						<th>Thomas</th>
-						<th>14.10.16</th>
+						<td>contact.html</td>
+						<td>Kontaktinfo</td>
+						<td>Thomas</td>
+						<td>14.10.16</td>
 					</tr>
 					<tr>
-						<th>about.html</th>
-						<th>Gjennomgående informasjon om kafeen</th>
-						<th>Hans</th>
-						<th>11.10.16</th>
+						<td>about.html</td>
+						<td>Gjennomgående informasjon om kafeen</td>
+						<td>Hans</td>
+						<td>11.10.16</td>
 					</tr>
 					<tr>
-						<th>about2.html</th>
-						<th>Informasjon om arkademaskinene i kafeen</th>
-						<th>Hans</th>
-						<th>14.10.16</th>
+						<td>about2.html</td>
+						<td>Informasjon om arkademaskinene i kafeen</td>
+						<td>Hans</td>
+						<td>14.10.16</td>
 					</tr>
 					<tr>
-						<th>servering.html</th>
-						<th>Informasjon om hvilke varer som selges og alergiinformasjon</th>
-						<th>Helle</th>
-						<th>11.10.16</th>
+						<td>servering.html</td>
+						<td>Informasjon om hvilke varer som selges og allergiinformasjon</td>
+						<td>Helle</td>
+						<td>11.10.16</td>
 					</tr>
 					<tr>
-						<th>arrangementer.html</th>
-						<th>Informasjon om kommende arrangementer og eventuell pris</th>
-						<th>Helle</th>
-						<th>14.10.16</th>
+						<td>arrangementer.html</td>
+						<td>Informasjon om kommende arrangementer og eventuell pris</td>
+						<td>Helle</td>
+						<td>14.10.16</td>
 					</tr>
 					<tr>
-						<th>gallery.html</th>
-						<th>Et bildegalleri</th>
-						<th>Andreas</th>
-						<th>11.10.16</th>
+						<td>gallery.html</td>
+						<td>Et bildegalleri</td>
+						<td>Andreas</td>
+						<td>11.10.16</td>
 					</tr>
 					<tr>
-						<th>jobs.html</th>
-						<th>Informasjon om ledige stillinger og hva som kreves av arbeidstaker</th>
-						<th>Tor</th>
-						<th>11.10.16</th>
+						<td>jobs.html</td>
+						<td>Informasjon om ledige stillinger og hva som kreves av arbeidstaker</td>
+						<td>Tor</td>
+						<td>11.10.16</td>
 					</tr>
 					<tr>
-						<th>jobs_application.html</th>
-						<th>En side der folk kan sende inn jobbsøknader</th>
-						<th>Tor</th>
-						<th>14.10.16</th>
+						<td>jobs_application.html</td>
+						<td>En side der folk kan sende inn jobbsøknader</td>
+						<td>Tor</td>
+						<td>14.10.16</td>
 					</tr>
 					<tr>
-						<th></th>
-						<th></th>
-						<th></th>
-						<th></th>
+						<td>gallery.js</td>
+						<td>For å få bildene til å rulere</td>
+						<td>Andreas</td>
+						<td>25.10.16</td>
 					</tr>
 					<tr>
-						<th>gallery.js</th>
-						<th>For å få bildene til å rulere</th>
-						<th>Andreas</th>
-						<th>25.10.16</th>
+						<td>fade.js</td>
+						<td>Banneren skal fade ut</td>
+						<td>Thomas</td>
+						<td>25.10.16</td>
 					</tr>
 					<tr>
-						<th>fade.js</th>
-						<th>Banneren skal fade ut</th>
-						<th>Thomas</th>
-						<th>25.10.16</th>
+						<td>rotatePictures.js</td>
+						<td>Headerbildet skal rulere mellom 3-4 bilder</td>
+						<td>Hans, Helle</td>
+						<td>25.10.16</td>
 					</tr>
 					<tr>
-						<th>rotatePictures.js</th>
-						<th>Headerbildet skal rulere mellom 3-4 bilder</th>
-						<th>Hans, Helle</th>
-						<th>25.10.16</th>
+						<td>picturePopup.js</td>
+						<td>Et modult bilde skal poppe opp når man klikker på bildet</td>
+						<td>Hans, Helle</td>
+						<td>25.10.16</td>
 					</tr>
 					<tr>
-						<th>poppup.js</th>
-						<th>Et modult bilde skal opooe opp når man klikker på bildet</th>
-						<th>Hans, Helle</th>
-						<th></th>
+						<td>checkForEmptyFields.js</td>
+						<td>Sjekker om noen av informasjonsfeltene i søknaden er tomme og stopper brukeren hvis de er det</td>
+						<td>Tor</td>
+						<td>25.10.16</td>
 					</tr>
 					<tr>
-						<th>checkForEmptyFields.js</th>
-						<th>Sjekker om noen av informasjonsfeltene i søknaden er tomme og stopper brukeren hvis de er det</th>
-						<th>Tor</th>
-						<th>25.10.16</th>
+						<td>main.css</td>
+						<td>Hovedstylingen som alle sidene skal bruke</td>
+						<td>Alle</td>
+						<td>31.10.16</td>
 					</tr>
 					<tr>
-						<th>main.css</th>
-						<th>Hovedstylingen som alle sidene skal bruke</th>
-						<th>Alle</th>
-						<th>31.10.16</th>
+						<td>index.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Thomas</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>index.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Thomas</th>
-						<th>18.10.16</th>
+						<td>contact.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Thomas</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>contact.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Thomas</th>
-						<th>18.10.16</th>
+						<td>about.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Hans</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>about.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Hans</th>
-						<th>18.10.16</th>
+						<td>about2.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Hans</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>sbout2.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Hans</th>
-						<th>18.10.16</th>
+						<td>servering.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Helle</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>servering.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Helle</th>
-						<th>18.10.16</th>
+						<td>arrangementer.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Helle</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>arrangementer.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Helle</th>
-						<th>18.10.16</th>
+						<td>gallery.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Andreas</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>gallery.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Andreas</th>
-						<th>18.10.16</th>
+						<td>jobs.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Tor</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>jobs.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Tor</th>
-						<th></th>
+						<td>jobs_application.css</td>
+						<td>Styling som siden skal bruke</td>
+						<td>Tor</td>
+						<td>18.10.16</td>
 					</tr>
 					<tr>
-						<th>jobs_aplications.css</th>
-						<th>Styling som siden skal bruke</th>
-						<th>Tor</th>
-						<th>18.10.16</th>
+						<td>navbar_part.html</td>
+						<td>Modulær HTML kode som brukes på alle sidene</td>
+						<td>Alle</td>
+						<td>16.11.16</td>
 					</tr>
-				</p>
+					<tr>
+						<td>footer_part.html</td>
+						<td>Modulær HTML kode som brukes på alle sidene</td>
+						<td>Alle</td>
+						<td>16.11.16</td>
+					</tr>
+					<tr>
+						<td>Avsluttende sjekk</td>
+						<td>Dobbelsjekk alle filer for feil, stavefeil og mangler. Sjekk CSS og javascript.</td>
+						<td>Alle</td>
+						<td>16.11.16</td>
+					</tr>
+				</table>
 			</section>
 		</main>
 		<footer>
