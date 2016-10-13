@@ -31,6 +31,10 @@ body {
 
 /* Navbar */
 .navbar {
+    position: fixed; /* Always show the navbar */
+    width: 100%;
+    box-sizing: border-box;
+
     list-style: none;
     margin: 0;
 
@@ -39,6 +43,11 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.navbar-push {
+    height: 41px; /* Update height with javascript */
+    visibility: hidden;
 }
 
 .navbar a {
@@ -56,10 +65,16 @@ body {
     background-color: #c84f25;
 }
 
-@media screen and (max-width: 1000px) {
+/* Collapse navbar */
+@media screen and (max-width: 550px) {
     .navbar {
         flex-flow: column wrap;
         padding: 0;
+        position: static;
+    }
+
+    .navbar-push {
+        display: none;
     }
 
     .navbar a {
