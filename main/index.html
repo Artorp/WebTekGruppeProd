@@ -16,10 +16,22 @@ Filename: index.html
 	</head>
 	<body>
 		<header>
-			<h1>Navbar temp placeholder</h1>
+			<div class="navbar-wrap">
+				<ul class="navbar">
+					<li><a href="index.html" class="active">Hjem</a></li>
+					<li><a href="contact.html">Kontakt oss</a></li>
+					<li><a href="about.html">Om kaféen</a></li>
+					<li><a href="about2.html">Om maskinene</a></li>
+					<li><a href="servering.html">Servering</a></li>
+					<li><a href="arrangementer.html">Arrangementer</a></li>
+					<li><a href="gallery.html">Bildegalleri</a></li>
+					<li><a href="jobs.html">Jobb hos oss</a></li>
+				</ul>
+				<div class="navbar-push"></div>
+			</div>
+			<div class="banner"><img src="img/Love-Coffee_James-Cridland_compressed.jpg" alt="Bilde av kaffe"></div>
 		</header>
-		<main>
-			<div><img src="img/Love-Coffee_James-Cridland_compressed.jpg" alt="Bilde av kaffe"></div>
+		<main class="clearfix">
 			<section>
 				<h2>Arkaden Kafé</h2>
 				<p>Jørunds gate 1</p>
@@ -34,7 +46,9 @@ Filename: index.html
 			</section>
 		</main>
 		<footer>
-			FOOTER PLACEHOLDER
+			<div>Arkaden Kafé | Jørunds gate 1 Trondheim</div>
+			<div>Webtek gruppeprosjekt 2016</div>
 		</footer>
+		<script src="scripts/navbarPositionFixed.js"></script>
 	</body>
 </html>
