@@ -65,7 +65,8 @@ body {
     background-color: #c84f25;
 }
 
-@media screen and (max-width: 1000px) {
+/* Collapse navbar */
+@media screen and (max-width: 550px) {
     .navbar {
         flex-flow: column wrap;
         padding: 0;
