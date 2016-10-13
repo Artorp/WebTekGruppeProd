@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Flexbox positioning */
 body {
     display: flex;
+    background: url(../img/texture.png);
     flex-direction: column;
     align-items: stretch;
     min-height: 100%;
@@ -104,7 +105,7 @@ main {
     box-sizing: border-box; /* Always 1000px width */
     padding: 0 20px;
     margin: 0 auto;
-    background-color: #97d9ff; /* Temporary color, for positioning */
+    background-color: rgba(255, 255, 255, 0.3);
     flex-grow: 1; /* Push footer down */
 }
 
