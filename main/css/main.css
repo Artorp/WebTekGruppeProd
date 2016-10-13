@@ -4,7 +4,6 @@
 @import 'https://fonts.googleapis.com/css?family=Lora';
 
 /* CSS styling */
-
 html,
 body {
     margin: 0;
@@ -87,10 +86,11 @@ div.banner {
 /* Main section */
 main {
     width: 1000px;
+    box-sizing: border-box; /* Always 1000px width */
+    padding: 0 20px;
     margin: 0 auto;
     background-color: #97d9ff; /* Temporary color, for positioning */
-    /* Flexbox */
-    flex-grow: 1;
+    flex-grow: 1; /* Push footer down */
 }
 
 @media screen and (max-width: 1000px) {
@@ -109,7 +109,16 @@ main {
 
 /* Footer */
 footer {
-    width: 100%;
-    height: 30px;
-    background-color: #fffdad; /* Temporary color, for positioning */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.56);
+    font-size: 12px;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+footer>* {
+    padding: 5px;
 }
