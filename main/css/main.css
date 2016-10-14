@@ -16,6 +16,21 @@ body {
     box-sizing: inherit;
 }
 
+/* Lenker styling */
+a:link,
+a:visited {
+    color: #232323;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3e3e3e;
+}
+
 /* Fonts */
 html {
     font-family: 'Lora', serif;
