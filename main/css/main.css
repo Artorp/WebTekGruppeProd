@@ -8,6 +8,12 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Box sizing, inherit for cascading */
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 /* Fonts */
@@ -34,7 +40,6 @@ body {
 .navbar {
     position: fixed; /* Always show the navbar */
     width: 100%;
-    box-sizing: border-box;
 
     list-style: none;
     margin: 0;
@@ -47,7 +52,7 @@ body {
 }
 
 .navbar-push {
-    height: 41px; /* Update height with javascript */
+    height: 40px; /* Update height with javascript */
     visibility: hidden;
 }
 
