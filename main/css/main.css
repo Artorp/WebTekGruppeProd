@@ -8,6 +8,27 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Box sizing, inherit for cascading */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Lenker styling */
+a:link,
+a:visited {
+    color: #232323;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3e3e3e;
 }
 
 /* Fonts */
@@ -34,7 +55,6 @@ body {
 .navbar {
     position: fixed; /* Always show the navbar */
     width: 100%;
-    box-sizing: border-box;
 
     list-style: none;
     margin: 0;
@@ -47,7 +67,7 @@ body {
 }
 
 .navbar-push {
-    height: 41px; /* Update height with javascript */
+    height: 40px; /* Update height with javascript */
     visibility: hidden;
 }
 
@@ -115,12 +135,25 @@ main {
     }
 }
 
+/* Clear floats */
 .clearfix::before,
 .clearfix::after {
-    content: "";
-    display: block;
+    content: " ";
+    display: table;
     clear: both;
-    padding-top: 1px;
+}
+
+/* Floating rows */
+.col-2 {
+    margin-bottom: 50px;
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 700px) {
+    .col-2 {
+        width: 100%;
+    }
 }
 
 /* Footer */
