@@ -120,12 +120,25 @@ main {
     }
 }
 
+/* Clear floats */
 .clearfix::before,
 .clearfix::after {
-    content: "";
-    display: block;
+    content: " ";
+    display: table;
     clear: both;
-    padding-top: 1px;
+}
+
+/* Floating rows */
+.col-2 {
+    margin-bottom: 50px;
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 700px) {
+    .col-2 {
+        width: 100%;
+    }
 }
 
 /* Footer */
