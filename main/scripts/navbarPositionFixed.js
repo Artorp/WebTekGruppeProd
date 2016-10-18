@@ -16,5 +16,5 @@ var addEvent = function (object, type, callback) {
 
 addEvent(window, "resize", function (event) {
     let height = document.getElementsByClassName("navbar")[0].offsetHeight;
-    document.getElementsByClassName("navbar-push")[0].style.height = height + "px";
+    document.getElementsByClassName("navbar-push")[0].style.height = (height - 1) + "px";
 });

@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <!-- Author: Thomas, Tor, Hans, Helle and Andreas
 Year: 2016
-Purpose: ArkadenKafe main page
-Filename: index.html
+Purpose: Information about the café
+Filename: about.html
 -->
 
 <html lang="no">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile viewport -->
-		<title>Om Maskinene</title>
-		<link rel="icon" type="image/png" href="img/arkaden_32x32.png">
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-	</head>
-	<body>
-	<header>
-		<ul class="navbar">
-			<li><a href="index.html">Hjem</a></li>
-			<li><a href="contact.html">Kontakt oss</a></li>
-			<li><a href="about.html">Om kaféen</a></li>
-			<li><a href="about2.html" class="active">Om maskinene</a></li>
-			<li><a href="servering.html">Servering</a></li>
-			<li><a href="arrangementer.html">Arrangementer</a></li>
-			<li><a href="gallery.html">Bildegalleri</a></li>
-			<li><a href="jobs.html">Jobb hos oss</a></li>
-		</ul>
-		<div class="banner"><img src='img/pacman_header.png' alt='Om maskinene!'></div>
-	</header>
-	<main class="clearfix">
-		<section>
-			<h2>Om Arkademaskinene!</h2>
-			<p>Arkaden tilbyr en rekke ulike arkademaskiner.
-				<br> Alt fra de klassiske maskinene som Pong, Pinball og Pacman til de mer moderne maskinene.
-				<br> Dette er noen av de maskinene arkaden har å tilby:</p>
-			<br>
-			<img src='img/pong.jpg' alt='Pong!' width=200 height=250>
-			<h4> Pong </h4>
-			<p> Pong var i 1972 et av de første videospillene i hele verden,
-				<br> og er av den grunn obligatorisk i en hver arkade hall. </p>
-			<p> På arkaden kan man velge mellom å kjøpe 1, 5, eller 10 spill.
-				<br> 1 spill: 5,-
-				<br> 5 spill: 20,-
-				<br> 10 spill: 40; </p>
-			<br>
-			<h4> Pacman </h4>
-			<img src='img/pacman.png' alt='Pacman!' width=200 height=250>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				<br>Aenean viverra, erat ut posuere ultrices, felis mi bibendum lacus,
-				<br>a euismod ex neque a nunc. Aliquam erat volutpat. Proin dui lacus,
-				<br>iaculis ac justo quis, euismod pellentesque ligula. Fusce tincidunt
-				<br>sed dolor vitae mollis. Nullam vel nisl maximus, bibendum ante laoreet, finibus felis.
-		</section>
-	</main>
-	<footer>
-		<div>Arkaden Kafé | Jørunds gate 1 Trondheim</div>
-		<div>Webtek gruppeprosjekt 2016</div>
-	</footer>
-	<script src="scripts/navbarPositionFixed.js"></script>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile viewport -->
+    <title>Om Maskinene</title>
+    <link rel="icon" type="image/png" href="img/arkaden_32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<header>
+    <div id="navbar-wrap">This content will be provided by javascript</div>
+    <div class="banner"><img src='img/pacman_header.png' alt='Om maskinene!'></div>
+</header>
+<main class="clearfix">
+    <section>
+        <h2>Om Arkademaskinene!</h2>
+        <p>Arkaden tilbyr en rekke ulike arkademaskiner.
+            <br> Alt fra de klassiske maskinene som Pong, Pinball og Pacman til de mer moderne maskinene.
+            <br> Dette er noen av de maskinene arkaden har å tilby:</p>
+        <br>
+        <img src='img/pong.jpg' alt='Pong!' width=200 height=250>
+        <h4> Pong </h4>
+        <p> Pong var i 1972 et av de første videospillene i hele verden,
+            <br> og er av den grunn obligatorisk i en hver arkade hall. </p>
+        <p> På arkaden kan man velge mellom å kjøpe 1, 5, eller 10 spill.
+            <br> 1 spill: 5,-
+            <br> 5 spill: 20,-
+            <br> 10 spill: 40; </p>
+        <br>
+        <h4> Pacman </h4>
+        <img src='img/pacman.png' alt='Pacman!' width=200 height=250>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>Aenean viverra, erat ut posuere ultrices, felis mi bibendum lacus,
+            <br>a euismod ex neque a nunc. Aliquam erat volutpat. Proin dui lacus,
+            <br>iaculis ac justo quis, euismod pellentesque ligula. Fusce tincidunt
+            <br>sed dolor vitae mollis. Nullam vel nisl maximus, bibendum ante laoreet, finibus felis.
+    </section>
+</main>
+<footer>
+    <div id="footer-wrap"></div>
+</footer>
+<script src="scripts/modularityImportHeaderFooter.js"></script>
+<script src="scripts/navbarPositionFixed.js"></script>
+</body>
 </html>
