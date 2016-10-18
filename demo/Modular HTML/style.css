@@ -1,0 +1,67 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Use Flexbox to position content */
+
+body {
+    display: flex;
+    flex-flow: nowrap column;
+}
+
+header {
+    background-color: #9c544b;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #519c3c;
+
+    width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #4a5e4d;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+
+    list-style: none;
+    margin: 0;
+
+    background-color: #000000;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+}
+
+.navbar a:hover:not(.active) {
+    background: #232323;
+}
+
+.active {
+    background-color: #c84f25;
+}
