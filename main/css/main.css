@@ -157,7 +157,7 @@ main {
 }
 
 /* Footer */
-footer {
+#footer-wrap {
     color: white;
     background-color: rgba(0, 0, 0, 0.56);
     font-size: 12px;
