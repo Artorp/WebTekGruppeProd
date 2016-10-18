@@ -168,6 +168,6 @@ main {
     justify-content: space-between;
 }
 
-footer>* {
+#footer-wrap>* {
     padding: 5px;
 }
