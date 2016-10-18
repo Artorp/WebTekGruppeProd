@@ -67,7 +67,7 @@ body {
 }
 
 .navbar-push {
-    height: 40px; /* Update height with javascript */
+    height: 39px; /* Update height with javascript */
     visibility: hidden;
 }
 
