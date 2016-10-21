@@ -5,140 +5,153 @@
 
 /* CSS styling */
 html {
-	font-family: 'Lora', serif;
-	font-size: 1.25em;
+    font-family: 'Lora', serif;
+    font-size: 1.25em;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Open sans, sans-serif;
+    font-family: Open sans, sans-serif;
 }
 
 div.header_date { /* Date */
-	margin: 16px 0 8px;
+    margin: 16px 0 8px;
 }
 
 body {
-	margin: 0 auto; /* center */
-	background-color: #eaeaea;
+    margin: 0 auto; /* center */
+    background-color: #eaeaea;
 }
 
 .center {
-	margin: 0 auto; /* center */
-	max-width: 800px;
-	position: relative;
+    margin: 0 auto; /* center */
+    max-width: 800px;
+    position: relative;
 }
 
 div#navbar-container {
-	position:sticky;
-	top:0;
-	z-index: 1;
-	min-height:30px;
-	overflow:auto;
-	height:auto; /* Default value, added for emphasis */
-	
-	/* flex setup */
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+    position:sticky;
+    top:0;
+    z-index: 1;
+    min-height:30px;
+    overflow:auto;
+    height:auto; /* Default value, added for emphasis */
+
+    /* flex setup */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Navigation Large */
 .navigation {
-	list-style: none;
-	margin: 0;
-	padding: 0 calc(calc(100% - 800px) / 2);
-	/*max-width:800px;*/
-	
-	background: #464646;
-	box-shadow: 0 2px 4px rgba(0,0,0,.3);
-	
-	/* Stick it to the top */
-	position:sticky;
-	top:0;
-	z-index: 1;
-	
-	display: flex;
-	
-	justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0 calc(calc(100% - 800px) / 2);
+
+    background: #464646;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+
+    /* Stick it to the top */
+    position:sticky;
+    top:0;
+    z-index: 1;
+
+    display: flex;
+
+    justify-content: space-around;
 }
 
 .navigation a {
-	text-decoration: none;
-	display: block;
-	padding: 0.5em;
-	color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: white;
+}
+
+.navigation img {
+    display: block;
+    height: 45px;
+    padding: 0.5em;
 }
 
 .navigation a:hover {
-	background: #545454;
+    background: #545454;
 }
 
 @media all and (max-width: 600px) {
-	.navigation {
-		flex-flow: column wrap;
-		padding: 0;
-		
-		/* Stop sticking to top */
-		position:static;
-		top:auto;
-	}
-	
-	.navigation a {
-		text-align: center;
-		padding: 10px;
-		border-top: 1px solid rgba(255,255,255,0.3);
-		border-bottom: 1px solid rgba(0,0,0,0.1);
-	}
-	
-	.navigation li:last-of-type a {
-		border-bottom: none;
-	}
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+
+        /* Stop sticking to top */
+        position:static;
+        top:auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
 }
 
 header {
-	padding: 20px 50px;
-	margin: 10px auto;
-	max-width: 800px;
+    padding: 20px 50px;
+    margin: 10px auto;
+    max-width: 800px;
 }
 
 div#main-header,
 section,
 div#navbar-container { /* Box in the elements*/
-	background: #fff;
+    background: #fff;
 }
 
 div#main-header { /* Border around main header for emphasis */
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgb(200, 200, 200);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
 }
 
 section { /* Section margin&padding */
-	padding: 20px 50px;
-	margin: 10px 0;
+    padding: 20px 50px;
+    margin: 10px 0;
 }
 
 main>:first-child {
-	border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 main>:last-child {
-	border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
 }
 
 footer {
-	padding: 0 15px;
-	margin: 10px 0;
-	font-size: 12px;
-	text-align: center;
-	opacity: 0.50;
+    padding: 0 15px;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.50;
 }
 
 h1 {
-	margin: 12px 0 21px;
+    margin: 12px 0 21px;
 }
 
 h2 {
-	margin: 5px 0;
+    margin: 5px 0;
 }
