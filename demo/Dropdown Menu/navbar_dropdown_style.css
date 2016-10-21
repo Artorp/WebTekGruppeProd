@@ -61,7 +61,7 @@ body {
     justify-content: space-between;
 }
 
-#navbar-menu-icon {
+#navbar-menu-icon img {
     position: absolute;
     right: 0;
     top: 0;
@@ -86,7 +86,7 @@ body {
     background: #545454;
 }
 
-#navbar-menu-icon:hover {
+#navbar-menu-icon img:hover {
     background: #545454;
 }
 
@@ -111,7 +111,7 @@ body {
         order: -5;
     }
 
-    #navbar-menu-icon {
+    #navbar-menu-icon img {
         display: block;
     }
 }

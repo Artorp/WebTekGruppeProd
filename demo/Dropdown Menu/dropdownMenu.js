@@ -3,8 +3,8 @@
  */
 
 function showDropdown(menu) {
-    if (menu.parentNode.hasChildNodes()) {
-        let children = menu.parentNode.childNodes;
+    if (menu.parentNode.parentNode.hasChildNodes()) {
+        let children = menu.parentNode.parentNode.childNodes;
         for (let i = 0; i < children.length; i++) {
             if (children[i].tagName == "LI") {
                 children[i].firstChild.classList.toggle("show");
@@ -16,7 +16,7 @@ function showDropdown(menu) {
 function closeDropdownMenu(event) {
     if (typeof event.target.matches != "function") {return}
     if (!event.target.matches("#navigation *")) { // Did the user click outside the navigation menu?
-        document.getElementById("navbar-menu-icon").click();
+        document.getElementById("navbar-menu-icon").firstChild.click();
     }
 }
 
