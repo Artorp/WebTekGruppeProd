@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 
 <html lang="no">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile viewport -->
-        <title>Demo: Dropdown menu</title>
-        <link rel="stylesheet" type="text/css" href="navbar_dropdown_style.css" />
-    </head>
-    <body>
-        <div id="main-header">
-            <div class="center">
-                <header>
-                    <h1>Title</h1>
-                    <h2>H2 title</h2>
-                    <div class="header_date">The year of 2016</div>
-                </header>
-            </div>
-        </div>
-        <ul class="navigation">
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Om&nbsp;Oss</a></li>
-            <li><a href="#">Meny</a></li>
-            <li><a href="#">Bildegalleri</a></li>
-            <li><a href="#">Kontakt&nbsp;Oss</a></li>
-            <li><img src="menu_bars.svg"></li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile viewport -->
+    <title>Demo: Dropdown menu</title>
+    <link rel="stylesheet" type="text/css" href="navbar_dropdown_style.css" />
+</head>
+<body>
+<div id="main-header">
+    <div class="center">
+        <header>
+            <h1>Title</h1>
+            <h2>H2 title</h2>
+            <div class="header_date">The year of 2016</div>
+        </header>
+    </div>
+</div>
+<div id="navbar-container">
+    <ul id="navigation">
+        <li><a href="#">Hjem</a></li>
+        <li class="act"><a href="#" class="active">Om&nbsp;Oss</a></li>
+        <li><a href="#">Meny</a></li>
+        <li><a href="#">Bildegalleri</a></li>
+        <li><a href="#">Kontakt&nbsp;Oss</a></li>
+        <img id="navbar-menu-icon" src="menu_bars.svg" onclick="showDropdown(this)">
+    </ul>
+</div>
+<main class="center">
+    <section>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue massa, commodo ut est vel, mattis imperdiet massa. Donec sollicitudin eu diam vel rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean pulvinar, nisi quis facilisis malesuada, lectus sem varius tortor, in iaculis tortor eros non sapien. Phasellus eget erat vel neque sagittis pellentesque sit amet ac nisi. Suspendisse et nunc gravida, suscipit mauris quis, ornare neque. Cras facilisis elementum lorem ut fringilla. Sed vel tristique elit. Maecenas posuere eu metus vitae interdum.</p>
+        <p>Curabitur nec mollis dui, quis porta tellus. In ex tellus, suscipit in auctor vitae, tincidunt quis enim. Nam lectus neque, maximus feugiat neque sit amet, tincidunt bibendum ligula. Sed at tortor at nisl bibendum venenatis. Pellentesque porttitor nulla tempus leo rutrum, a ultrices magna faucibus. In ut efficitur turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam vel dapibus quam, vitae luctus leo. Nulla ut fermentum mauris. Ut tincidunt in felis blandit fermentum. Aliquam erat volutpat. Aliquam erat volutpat. Nullam urna risus, malesuada eu auctor ac, tincidunt aliquam purus.</p>
+        <p>Suspendisse et hendrerit lacus, ut commodo purus. Nulla nec eros vitae erat varius dignissim. Mauris ut nunc velit. Vestibulum at posuere ligula. Quisque sit amet vehicula tortor. Donec congue nulla id luctus rutrum. Aenean bibendum dui elementum gravida lacinia. Suspendisse finibus tempus orci in mattis.</p>
+        <p>Curabitur non pellentesque diam, nec tempus nisi. Sed dui nibh, facilisis eget euismod sed, bibendum rutrum ipsum. Vestibulum vehicula elementum felis. Quisque ut hendrerit lorem, at dignissim neque. Nulla accumsan justo non mattis volutpat. Mauris vel bibendum magna. Quisque ornare non ipsum quis malesuada. Donec vestibulum, ipsum sed ornare volutpat, ex purus tincidunt ante, eget porttitor enim augue non justo. Proin auctor maximus tortor, sed fermentum quam semper sit amet. Sed ac lacus in neque porttitor viverra.</p>
+        <p>In quis tortor mollis, consectetur dolor fringilla, tincidunt elit. Mauris eu rhoncus lectus. Proin porttitor scelerisque malesuada. Suspendisse fermentum sapien eget felis sagittis gravida. Nulla ac semper mi. Etiam finibus nunc sed consequat fermentum. Aenean ut semper ante. Nam ultrices ultrices lectus, id fringilla dolor rhoncus vitae. Suspendisse vehicula bibendum lectus sit amet pharetra. Donec ac ultricies diam. Pellentesque vel lorem vitae neque semper congue. Donec finibus augue sit amet nisi vehicula sollicitudin. Duis tincidunt ultricies sem quis vulputate. Sed at neque dapibus eros porta convallis vel eget lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+    <section>
+        <h2>Curabitur nec</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Proin aliquam ipsum eget metus sodales convallis.</li>
+            <li>Duis posuere velit congue diam volutpat aliquam.</li>
+            <li>Maecenas egestas libero sit amet mattis accumsan.</li>
+            <li>Quisque dignissim sem ultricies sapien bibendum, at vulputate lorem hendrerit.</li>
+            <li>Phasellus vel felis vulputate, faucibus purus ut, rutrum urna.</li>
         </ul>
-        <main class="center">
-            <section>
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue massa, commodo ut est vel, mattis imperdiet massa. Donec sollicitudin eu diam vel rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean pulvinar, nisi quis facilisis malesuada, lectus sem varius tortor, in iaculis tortor eros non sapien. Phasellus eget erat vel neque sagittis pellentesque sit amet ac nisi. Suspendisse et nunc gravida, suscipit mauris quis, ornare neque. Cras facilisis elementum lorem ut fringilla. Sed vel tristique elit. Maecenas posuere eu metus vitae interdum.</p>
-                <p>Curabitur nec mollis dui, quis porta tellus. In ex tellus, suscipit in auctor vitae, tincidunt quis enim. Nam lectus neque, maximus feugiat neque sit amet, tincidunt bibendum ligula. Sed at tortor at nisl bibendum venenatis. Pellentesque porttitor nulla tempus leo rutrum, a ultrices magna faucibus. In ut efficitur turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam vel dapibus quam, vitae luctus leo. Nulla ut fermentum mauris. Ut tincidunt in felis blandit fermentum. Aliquam erat volutpat. Aliquam erat volutpat. Nullam urna risus, malesuada eu auctor ac, tincidunt aliquam purus.</p>
-                <p>Suspendisse et hendrerit lacus, ut commodo purus. Nulla nec eros vitae erat varius dignissim. Mauris ut nunc velit. Vestibulum at posuere ligula. Quisque sit amet vehicula tortor. Donec congue nulla id luctus rutrum. Aenean bibendum dui elementum gravida lacinia. Suspendisse finibus tempus orci in mattis.</p>
-                <p>Curabitur non pellentesque diam, nec tempus nisi. Sed dui nibh, facilisis eget euismod sed, bibendum rutrum ipsum. Vestibulum vehicula elementum felis. Quisque ut hendrerit lorem, at dignissim neque. Nulla accumsan justo non mattis volutpat. Mauris vel bibendum magna. Quisque ornare non ipsum quis malesuada. Donec vestibulum, ipsum sed ornare volutpat, ex purus tincidunt ante, eget porttitor enim augue non justo. Proin auctor maximus tortor, sed fermentum quam semper sit amet. Sed ac lacus in neque porttitor viverra.</p>
-                <p>In quis tortor mollis, consectetur dolor fringilla, tincidunt elit. Mauris eu rhoncus lectus. Proin porttitor scelerisque malesuada. Suspendisse fermentum sapien eget felis sagittis gravida. Nulla ac semper mi. Etiam finibus nunc sed consequat fermentum. Aenean ut semper ante. Nam ultrices ultrices lectus, id fringilla dolor rhoncus vitae. Suspendisse vehicula bibendum lectus sit amet pharetra. Donec ac ultricies diam. Pellentesque vel lorem vitae neque semper congue. Donec finibus augue sit amet nisi vehicula sollicitudin. Duis tincidunt ultricies sem quis vulputate. Sed at neque dapibus eros porta convallis vel eget lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </section>
-            <section>
-                <h2>Curabitur nec</h2>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Proin aliquam ipsum eget metus sodales convallis.</li>
-                    <li>Duis posuere velit congue diam volutpat aliquam.</li>
-                    <li>Maecenas egestas libero sit amet mattis accumsan.</li>
-                    <li>Quisque dignissim sem ultricies sapien bibendum, at vulputate lorem hendrerit.</li>
-                    <li>Phasellus vel felis vulputate, faucibus purus ut, rutrum urna.</li>
-                </ul>
-                <p>Donec egestas lorem at mi consectetur feugiat. Cras cursus ipsum eget turpis convallis, vel aliquet lectus tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sit amet elementum diam. Phasellus sagittis eros vulputate scelerisque tempus. Proin porta, velit vel maximus mattis, enim elit varius urna, at hendrerit nibh est quis dui. Suspendisse porta tellus in vehicula porta. Praesent scelerisque nulla ullamcorper posuere malesuada. Etiam enim dolor, varius id placerat et, rhoncus vel libero. Donec in varius arcu. Pellentesque cursus purus non porta imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sit amet ultrices ipsum, in dignissim metus. Phasellus ut nisi et magna suscipit pretium. Cras eros arcu, tempor ac dolor interdum, aliquam fermentum nisl.</p>
-            </section>
-        </main>
-        <footer>
-            <div class="center">Andreas&nbsp;Bergmo&nbsp;Johnsen, Hans&nbsp;Bjerkevoll, Helle&nbsp;van&nbsp;den&nbsp;Broek, Thomas&nbsp;Bruvold, og Tor&nbsp;Niklas&nbsp;Strøm</div>
-        </footer>
-    </body>
+        <p>Donec egestas lorem at mi consectetur feugiat. Cras cursus ipsum eget turpis convallis, vel aliquet lectus tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sit amet elementum diam. Phasellus sagittis eros vulputate scelerisque tempus. Proin porta, velit vel maximus mattis, enim elit varius urna, at hendrerit nibh est quis dui. Suspendisse porta tellus in vehicula porta. Praesent scelerisque nulla ullamcorper posuere malesuada. Etiam enim dolor, varius id placerat et, rhoncus vel libero. Donec in varius arcu. Pellentesque cursus purus non porta imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sit amet ultrices ipsum, in dignissim metus. Phasellus ut nisi et magna suscipit pretium. Cras eros arcu, tempor ac dolor interdum, aliquam fermentum nisl.</p>
+    </section>
+</main>
+<footer>
+    <div class="center">Andreas&nbsp;Bergmo&nbsp;Johnsen, Hans&nbsp;Bjerkevoll, Helle&nbsp;van&nbsp;den&nbsp;Broek, Thomas&nbsp;Bruvold, og Tor&nbsp;Niklas&nbsp;Strøm</div>
+</footer>
+<script src="dropdownMenu.js"></script>
+</body>
 </html>

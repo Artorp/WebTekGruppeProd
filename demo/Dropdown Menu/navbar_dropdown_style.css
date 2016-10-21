@@ -36,76 +36,83 @@ body {
     position: relative;
 }
 
-div#navbar-container {
-    position:sticky;
-    top:0;
-    z-index: 1;
-    min-height:30px;
-    overflow:auto;
-    height:auto; /* Default value, added for emphasis */
-
-    /* flex setup */
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+#navbar-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Navigation Large */
-.navigation {
+#navigation {
     list-style: none;
-    margin: 0;
-    padding: 0 calc(calc(100% - 800px) / 2);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
 
     background: #464646;
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
 
     /* Stick it to the top */
-    position:sticky;
+    position:relative;
     top:0;
-    z-index: 1;
 
     display: flex;
 
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.navigation a {
+#navbar-menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    height: 45px;
+    padding: 13px;
+    cursor: pointer;
+}
+
+#navigation a {
     text-decoration: none;
     display: block;
     padding: 0.5em;
     color: white;
 }
 
-.navigation img {
-    display: block;
-    height: 45px;
-    padding: 0.5em;
+.active {
+    background-color: #9f5824;
 }
 
-.navigation a:hover {
+#navigation a:hover {
+    background: #545454;
+}
+
+#navbar-menu-icon:hover {
     background: #545454;
 }
 
 @media all and (max-width: 600px) {
-    .navigation {
-        flex-flow: column wrap;
-        padding: 0;
-
-        /* Stop sticking to top */
-        position:static;
-        top:auto;
+    #navigation {
+        flex-direction: column;
     }
 
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255,255,255,0.3);
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+    #navigation a {
+        display: none;
     }
 
-    .navigation li:last-of-type a {
-        border-bottom: none;
+    #navigation a.show {
+        display: block;
+    }
+
+    #navigation .active {
+        display: block;
+    }
+
+    #navigation .act {
+        order: -5;
+    }
+
+    #navbar-menu-icon {
+        display: block;
     }
 }
 
@@ -116,8 +123,7 @@ header {
 }
 
 div#main-header,
-section,
-div#navbar-container { /* Box in the elements*/
+section { /* Box in the elements*/
     background: #fff;
 }
 
