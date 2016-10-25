@@ -1,4 +1,6 @@
 /*Javascript for gallery.html (bildegalleri)                 
+
+Bare en start. Ikke funksjonell kode enda.
 */
 
  function next()
