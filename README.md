@@ -88,6 +88,6 @@ Etter det er gjort, lagre endringene i en commit og publiser/sync.
 
 Her er noen ressurser om å bruke Git:
 
-https://github.com/blog/2019-how-to-undo-almost-anything-with-git
-http://rogerdudler.github.io/git-guide/
-http://marklodato.github.io/visual-git-guide/index-en.html
+https://github.com/blog/2019-how-to-undo-almost-anything-with-git  
+http://rogerdudler.github.io/git-guide/  
+http://marklodato.github.io/visual-git-guide/index-en.html  
