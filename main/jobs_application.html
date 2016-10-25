@@ -4,13 +4,14 @@
 		<meta charset="UTF-8">
 		<title>Jobbsoknad</title><link rel="icon" type="image/png" href="img/arkaden_32x32.png">
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/jobs_application.css" />
 	</head>
 	<body>
 		<header>
-			<div class="navbar">Navbar placeholder</div>
 			<div class="banner"><img src="img/Coffee_Beans_Banner.jpg" alt="banner"></div>
 		</header>
 		<main>
+			<div id="form">
 			<br>
 			<h1>Jobbsøknad</h1><br>
 			<form action="somewhere.asp" method="post">
@@ -19,18 +20,21 @@
 				Adresse<br>
 				<input type="text" name="adresse"><br><br>
 				Interesser<br>
-				<input type="text" name="interesser"><br><br>
+				<textarea name="interesser" class="bigbox"></textarea><br><br>
 				Tidligere erfaring<br>
-				<input type="text" name="erfaring"><br><br>
+				<textarea name="erfaring" class="bigbox"></textarea><br><br>
 				Hvorfor vil du jobbe hos oss?<br>
-				<input type="text" name="hvorforJobb"><br><br>
+				<textarea name="hvorforJobb" class="bigbox"></textarea><br><br>
 				Hvorfor er du bedre enn alle andre?<br>
-				<input type="text" name="hvorforBedre"><br><br>
+				<textarea name="hvorforBedre" class="bigbox"></textarea><br><br>
 				<button type="submit" value="Submit">Send inn</button>
 			</form>
+			</div>
 		</main>
 		<footer>
-			Footer placeholder
+			<div id="footer-wrap"></div>
 		</footer>
+		<script src="scripts/modularityImportHeaderFooter.js"></script>
+		<script src="scripts/navbarPositionFixed.js"></script>
 	</body>
 </html>
