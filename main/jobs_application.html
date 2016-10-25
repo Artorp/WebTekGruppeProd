@@ -16,18 +16,49 @@
 			<h1>Jobbsøknad</h1><br>
 			<form action="somewhere.asp" method="post">
 				Navn<br>
-				<input type="text" name="navn"><br><br>
+				<input 
+				id="navn" 
+				type="text" 
+				name="navn"><br><br>
+
 				Adresse<br>
-				<input type="text" name="adresse"><br><br>
+				<input 
+				id="adresse" 
+				type="text" 
+				name="adresse"><br><br>
+
 				Interesser<br>
-				<textarea name="interesser" class="bigbox"></textarea><br><br>
+				<textarea
+				id="interesser" 
+				name="interesser" 
+				class="bigbox"></textarea><br><br>
+
 				Tidligere erfaring<br>
-				<textarea name="erfaring" class="bigbox"></textarea><br><br>
+				<textarea 
+				id="erfaring" 
+				name="erfaring" 
+				class="bigbox">
+				</textarea><br><br>
+
 				Hvorfor vil du jobbe hos oss?<br>
-				<textarea name="hvorforJobb" class="bigbox"></textarea><br><br>
+				<textarea 
+				id="hvorforJobb" 
+				name="hvorforJobb" 
+				class="bigbox">
+				</textarea><br><br>
+
 				Hvorfor er du bedre enn alle andre?<br>
-				<textarea name="hvorforBedre" class="bigbox"></textarea><br><br>
-				<button type="submit" value="Submit">Send inn</button>
+				<textarea 
+				id="hvorforBedre" 
+				name="hvorforBedre" 
+				class="bigbox">
+				</textarea><br><br>
+
+				<button 
+				type="button" 
+				onclick="mcheck()">
+					Send inn
+				</button>
 			</form>
 			</div>
 		</main>
@@ -36,5 +67,6 @@
 		</footer>
 		<script src="scripts/modularityImportHeaderFooter.js"></script>
 		<script src="scripts/navbarPositionFixed.js"></script>
+		<script src="scripts/checkForEmptyFields.js"></script>
 	</body>
 </html>
