@@ -1,0 +1,15 @@
+
+#kaffe, #brod{
+	float:right;
+}
+
+td:nth-child(2) {
+	text-align: right;
+}
+
+.tabell {
+	width: 400px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid black;
+}

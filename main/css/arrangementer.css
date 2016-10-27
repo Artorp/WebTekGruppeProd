@@ -1,1 +1,27 @@
-:) 
+img {
+	width: 400px;
+	float:right;
+}
+
+h2 {
+	font-size: medium;
+}
+
+section {
+	width: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#pinbal {
+    height: 280px;
+}
+
+#quiz {
+    height: 280px;
+
+#ol {
+    height: 450px;
+}
+
