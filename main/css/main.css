@@ -54,6 +54,7 @@ body {
 /* Navbar */
 .navbar {
     position: fixed; /* Always show the navbar */
+    z-index: 10;
     width: 100%;
 
     list-style: none;
@@ -68,8 +69,8 @@ body {
 }
 
 .navbar-push {
-    height: 39px; /* Update height with javascript */
-    visibility: hidden;
+    height: 39px; /* This height will be updated with javascript through navbarPositionFixed.js */
+    background-color: #000000;
 }
 
 .navbar a {

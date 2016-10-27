@@ -1,5 +1,30 @@
 /* Filename: index.css */
 
-html {
-	/*font-size: 100%;*/
+.banner {
+    position: relative;
+}
+
+#arkaden-svg {
+    position: absolute;
+    top: 15%;
+    height: 70%;
+}
+
+td {
+    padding: 3px;
+}
+
+
+#map-wrap {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
 }
