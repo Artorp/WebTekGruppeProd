@@ -26,7 +26,7 @@ Filename: index.html
     <h1>Velkommen til oss!</h1>
     <p>Arkaden Kafé er en kombinasjon av kafe og arkade med fokus på klassiske videospill og god mat.</p>
     <p>Vi tilbyr drikker, kaffe, kaker, arkademaskiner, underholdning.</p>
-    <p>Du finnes oss på Øya like i ly av St. Olavs.</p>
+    <p>Du finnes oss på Øya like i ly av St. Olavs. Se kart nederst på sida.</p>
     <h2>Åpningstider:</h2>
     <table>
         <tr>
@@ -46,11 +46,28 @@ Filename: index.html
         Mer informasjon om maskinene finner du <a href="about2.html">her!</a></p>
     <p><a href="contact.html">Kontakt oss</a> for å bestille bord, lokalisasjoner, eller for å få levert bakst per bil.</p>
     <h3>Her finner du oss!</h3>
-    <div id="map"></div>
+    <div id="map-wrap"><div id="map"></div></div>
 </main>
 <footer>
     <div id="footer-wrap"></div>
 </footer>
+<script>
+    function initMap() {
+        var uluru = {lat: 63.421692, lng: 10.383806};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru,
+            styles: [{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"visibility":"off"}]},{"featureType":"road.local","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"water","stylers":[{"color":"#84afa3"},{"lightness":52}]},{"stylers":[{"saturation":-17},{"gamma":0.36}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#3f518c"}]}]
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPAo_0Wrr4YfZwq6VU79jYRjBVlZAnrc&callback=initMap">
+</script>
 <script src="scripts/modularityImportHeaderFooter.js"></script>
 <script src="scripts/navbarPositionFixed.js"></script>
 </body>
