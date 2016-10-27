@@ -1,7 +1,16 @@
-img {
-	border-image = 80%;
+#pong, #pacman, #space, #pinball {
+	position:absolute;	
+	right: 18.4%;
+	margin: 25px;
 }
 
-body {
-	color = 'red';
+#pong {
+	top: 95%;
 }
+
+#pacman {
+	top: 150%;
+}
+
+
+
