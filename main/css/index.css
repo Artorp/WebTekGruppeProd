@@ -1,5 +1,11 @@
 /* Filename: index.css */
 
-html {
-	/*font-size: 100%;*/
+.banner {
+    position: relative;
+}
+
+#arkaden-svg {
+    position: absolute;
+    top: 15%;
+    height: 70%;
 }
