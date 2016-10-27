@@ -54,6 +54,7 @@ body {
 /* Navbar */
 .navbar {
     position: fixed; /* Always show the navbar */
+    z-index: 10;
     width: 100%;
 
     list-style: none;
