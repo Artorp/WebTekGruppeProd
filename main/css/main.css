@@ -68,8 +68,8 @@ body {
 }
 
 .navbar-push {
-    height: 39px; /* Update height with javascript */
-    visibility: hidden;
+    height: 39px; /* This height will be updated with javascript through navbarPositionFixed.js */
+    background-color: #000000;
 }
 
 .navbar a {
