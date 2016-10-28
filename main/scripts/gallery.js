@@ -1,5 +1,5 @@
 /* Author: Andreas
-Year: 2016
+When: November 2016
 Filename: gallery.js*/
 
 /*Javascript for gallery.html (bildegalleri)
@@ -14,9 +14,13 @@ Bare en start. Ikke funksjonell kode enda.
     myImage[1]="cocktail_cab.jpg";
     myImage[2]="pinball.jpg";
     myImage[3]="kakerkaffe.jpg";
-	myImage[4]="Spaceinvaders.jpg.jpg";
+	myImage[4]="Spaceinvaders.jpg";
 
     ImageCnt++;
 
 
+  }
+  function pictureChange()
+  {
+  document.getElementById("myImage").src="img";
   }
