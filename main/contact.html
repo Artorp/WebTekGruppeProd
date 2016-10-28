@@ -48,11 +48,51 @@ Filename: contact.html
             123456789
         </section>
     </div>
+    <div class="row clearfix">
+        <section class="col-2">
+            <h2>Åpningstider:</h2>
+            <table>
+                <tr>
+                    <td>Man - Tor,</td>
+                    <td>11:00 - 01:30</td>
+                </tr>
+                <tr>
+                    <td>Fre - Lør,</td>
+                    <td>11:00 - 02:30</td>
+                </tr>
+                <tr>
+                    <td>Søn,</td>
+                    <td>11:00 - 01:30</td>
+                </tr>
+            </table>
+        </section>
+        <section class="col-2">
+            <h2>Her finner du oss!</h2>
+            <div id="map-wrap"><div id="map"></div></div>
+        </section>
+    </div>
 </main>
 <footer>
     <div id="footer-wrap"></div>
 </footer>
 <script src="scripts/modularityImportHeaderFooter.js"></script>
 <script src="scripts/navbarPositionFixed.js"></script>
+<script>
+    function initMap() {
+        var uluru = {lat: 63.421692, lng: 10.383806};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru, // google maps style "retro" from here: https://snazzymaps.com/style/18/retro
+            styles: [{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"visibility":"off"}]},{"featureType":"road.local","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"water","stylers":[{"color":"#84afa3"},{"lightness":52}]},{"stylers":[{"saturation":-17},{"gamma":0.36}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#3f518c"}]}]
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPAo_0Wrr4YfZwq6VU79jYRjBVlZAnrc&callback=initMap">
+</script>
 </body>
 </html>
