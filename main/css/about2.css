@@ -1,0 +1,16 @@
+#pong, #pacman, #space, #pinball {
+	position:absolute;	
+	right: 18.4%;
+	margin: 25px;
+}
+
+#pong {
+	top: 95%;
+}
+
+#pacman {
+	top: 150%;
+}
+
+
+
