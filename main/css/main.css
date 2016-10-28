@@ -173,3 +173,17 @@ main {
 #footer-wrap>* {
     padding: 5px;
 }
+
+/* Image figure styling */
+
+.float-right {
+    float: right;
+}
+
+.fig-img {
+    max-width: 100%;
+}
+
+.fig-img img {
+    max-width: 100%;
+}

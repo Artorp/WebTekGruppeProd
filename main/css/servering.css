@@ -1,0 +1,23 @@
+
+td:nth-child(2) {
+	text-align: right;
+}
+
+.tabell {
+	width: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    float: left;
+}
+
+img {
+	width:350px;
+	margin-left: 20px;
+}
+
+#tilbud {
+	height: 130px;
+	width: 500px;
+}
+
