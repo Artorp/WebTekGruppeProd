@@ -14,7 +14,9 @@ var xhr_navbar = new XMLHttpRequest();
 xhr_navbar.open("get", "modularity/navbar_part.html", true);
 xhr_navbar.onreadystatechange = function () {
     if (xhr_navbar.readyState != XMLHttpRequest.DONE) return;
-    document.getElementById("navbar-wrap").innerHTML = xhr_navbar.responseText;
+    let navbar_wrapper = document.getElementById("navbar-wrap");
+    if (!navbar_wrapper) { return }
+    navbar_wrapper.innerHTML = xhr_navbar.responseText;
     // Set active navbar item class
     let myURL = window.location.pathname; // IE /main/contact.html
     let myFilename = myURL.substring(myURL.lastIndexOf("/")+1); // IE contact.html
@@ -33,6 +35,8 @@ var xhr_footer = new XMLHttpRequest();
 xhr_footer.open("get", "modularity/footer_part.html", true);
 xhr_footer.onreadystatechange = function () {
     if (xhr_footer.readyState != XMLHttpRequest.DONE) return;
-    document.getElementById("footer-wrap").innerHTML = xhr_footer.responseText;
+    let footer_wrapper = document.getElementById("footer-wrap");
+    if (!footer_wrapper) { return }
+    footer_wrapper.innerHTML = xhr_footer.responseText;
 };
 xhr_footer.send();
