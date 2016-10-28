@@ -1,6 +1,6 @@
 img {
 	width: 400px;
-	float:right;
+    float: right;
 }
 
 h2 {
@@ -12,6 +12,7 @@ section {
     padding: 20px;
     border: 1px solid black;
     margin-bottom: 20px;
+    float:left;
 }
 
 #pinbal {
@@ -20,8 +21,8 @@ section {
 
 #quiz {
     height: 280px;
+}
 
 #ol {
     height: 450px;
 }
-
