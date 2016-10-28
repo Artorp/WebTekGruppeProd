@@ -1,5 +1,5 @@
 /* Author: Andreas
-When: November 2016
+Year: 2016
 Filename: gallery.js*/
 
 /*Javascript for gallery.html (bildegalleri)
