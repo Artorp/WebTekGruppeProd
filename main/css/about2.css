@@ -1,0 +1,16 @@
+#pong, #pacman, #space, #pinball {
+	float:right;
+}
+
+#pong-text, #pacman-text, #space-text, #pinball-text{
+	border-style: solid;
+	padding: 5px;
+	max-width: 500px;
+}
+
+#pong-headline, #pacman-headline, #space-headline, #pinball-headline {
+	margin-top: 0px;
+}
+
+
+
