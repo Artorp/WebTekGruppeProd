@@ -1,8 +1,19 @@
+/*
+Author: Tor Niklas
+Year: 2016
+Purpose: Styling for jobs.html
+Filename: jobs.css
+Modification history:
+
+*/
+
 #text{
 	width: 100%;
 	padding: 7%;
 	padding-top: 4%;
 }
+
+/*Styling for linken til jobs_application.html*/
 #jobbsok{
 	padding-top: auto;
 	width: 95px;
