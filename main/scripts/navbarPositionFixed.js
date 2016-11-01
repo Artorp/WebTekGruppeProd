@@ -26,7 +26,6 @@ function getListNavbarChildren() {
 }
 
 function showDropdown(menu) {
-    console.log("Clicked the menu icon");
     let children = getListNavbarChildren();
     for (let i=0; i<children.length; i++) {
         children[i].firstChild.classList.toggle("show");
@@ -53,6 +52,8 @@ function closeDropdownMenu(event) {
 function resizePushEl() {
     let height = document.getElementById("navbar").getBoundingClientRect().height;
     document.getElementById("navbar-push").style.height = height + "px";
+    height = document.getElementsByClassName("active")[0].getBoundingClientRect().height;
+    document.getElementById("navbar-menu-icon").style.height = height + "px";
 }
 
 addEvent(window, "resize", resizePushEl);

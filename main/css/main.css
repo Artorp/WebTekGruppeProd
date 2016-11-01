@@ -94,7 +94,7 @@ body {
     top: 0;
     right: 0;
     padding: 10px 10px;
-    height: 42px;
+    height: 41px; /* updated with JS, see navbarPositionFixed.js */
     z-index: 15;
     cursor: hand;
     cursor: pointer;
@@ -132,10 +132,6 @@ body {
         padding: 10px;
         border-top: 1px solid rgba(255, 255, 255, 0.36);
         border-bottom: 1px solid rgba(0, 0, 0, 0.14);
-    }
-
-    #navbar li:last-of-type a {
-        border-bottom: none;
     }
 
     #navbar a.active {
