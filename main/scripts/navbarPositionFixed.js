@@ -30,6 +30,11 @@ function showDropdown(menu) {
     for (let i=0; i<children.length; i++) {
         children[i].firstChild.classList.toggle("show");
     }
+    let navbarChildren = getListNavbarChildren();
+    // Is the page a main element?
+    if (!document.getElementsByClassName("active").length) {
+        navbarChildren[0].firstChild.classList.add("show");
+    }
     menu.preventDefault(); // Prevent ontouchstart event from triggering onclick
 }
 
@@ -46,14 +51,26 @@ function closeDropdownMenu(event) {
                 navbarChildren[i].firstChild.classList.remove("show");
             }
         }
+        // Is the page a main element?
+        if (!document.getElementsByClassName("active").length) {
+            navbarChildren[0].firstChild.classList.add("show");
+        }
     }
 }
 
 function resizePushEl() {
-    let height = document.getElementById("navbar").getBoundingClientRect().height;
+    let height = 10;
+    if (document.getElementsByClassName("active").length) {
+        height = document.getElementsByClassName("active")[0].getBoundingClientRect().height;
+        document.getElementById("navbar-menu-icon").style.height = height + "px";
+    } else {
+        let navbarChildren = getListNavbarChildren();
+        navbarChildren[0].firstChild.classList.add("show");
+        height = navbarChildren[0].firstChild.getBoundingClientRect().height;
+        document.getElementById("navbar-menu-icon").style.height = height + "px";
+    }
+    height = document.getElementById("navbar").getBoundingClientRect().height;
     document.getElementById("navbar-push").style.height = height + "px";
-    height = document.getElementsByClassName("active")[0].getBoundingClientRect().height;
-    document.getElementById("navbar-menu-icon").style.height = height + "px";
 }
 
 addEvent(window, "resize", resizePushEl);
