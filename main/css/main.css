@@ -124,11 +124,6 @@ body {
     #navbar {
         flex-flow: column wrap;
         padding: 0;
-        position: static;
-    }
-
-    #navbar-push {
-        display: none;
     }
 
     #navbar a {
