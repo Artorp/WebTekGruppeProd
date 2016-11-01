@@ -27,6 +27,12 @@ xhr_navbar.onreadystatechange = function () {
             break;
         }
     }
+    if (resizePushEl) {
+        resizePushEl(); // Resize push-navbar, function defined in navbarPositionFixed.js
+    }
+    // Attach showMenu event to menu icon (collapsible menu)
+    addEvent(document.getElementById("navbar-menu-icon"), "click", showDropdown);
+    addEvent(document.getElementById("navbar-menu-icon"), "touchstart", showDropdown);
 };
 xhr_navbar.send();
 

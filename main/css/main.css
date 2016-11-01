@@ -52,7 +52,7 @@ body {
 }
 
 /* Navbar */
-.navbar {
+#navbar {
     position: fixed; /* Always show the navbar */
     z-index: 10;
     width: 100%;
@@ -68,19 +68,19 @@ body {
     justify-content: center;
 }
 
-.navbar-push {
+#navbar-push {
     height: 39px; /* This height will be updated with javascript through navbarPositionFixed.js */
     background-color: #000000;
 }
 
-.navbar a {
+#navbar a {
     text-decoration: none;
     display: block;
     padding: 10px 15px;
     color: white;
 }
 
-.navbar a:hover:not(.active) {
+#navbar a:hover:not(.active) {
     background: #232323;
 }
 
@@ -88,27 +88,55 @@ body {
     background-color: #c84f25;
 }
 
+#navbar-menu-icon {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 10px;
+    height: 41px; /* updated with JS, see navbarPositionFixed.js */
+    z-index: 15;
+    cursor: hand;
+    cursor: pointer;
+    background-color: #c84f25;
+    border-top: 1px solid rgba(255, 255, 255, 0.36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+#navbar-menu-icon:hover {
+    background-color: #000000;
+}
+
+#navbar-menu-icon img {
+    height: 100%;
+}
+
+#navbar a.show {
+    display: block;
+}
+
 /* Collapse navbar */
 @media screen and (max-width: 550px) {
-    .navbar {
+    #navbar-menu-icon {
+        display: block;
+    }
+
+    #navbar {
         flex-flow: column wrap;
         padding: 0;
-        position: static;
     }
 
-    .navbar-push {
+    #navbar a {
         display: none;
-    }
-
-    .navbar a {
         text-align: center;
         padding: 10px;
         border-top: 1px solid rgba(255, 255, 255, 0.36);
         border-bottom: 1px solid rgba(0, 0, 0, 0.14);
     }
 
-    .navbar li:last-of-type a {
-        border-bottom: none;
+    #navbar a.active {
+        order: -1;
+        display: block;
     }
 }
 

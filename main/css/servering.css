@@ -11,7 +11,7 @@ td:nth-child(2) {
     float: left;
 }
 
-img {
+.img-class {
 	width:350px;
 	margin-left: 20px;
 }
