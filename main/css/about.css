@@ -1,0 +1,12 @@
+.infobox {
+	border-style: solid;
+	padding-top: 0px;
+	padding: 5px;
+	max-width: 500px;
+}
+
+
+.infobox h4 {
+	margin-top: 0px;
+}
+
