@@ -1,3 +1,10 @@
+// Author: Tor Niklas
+// Year: 2016
+// Purpose: Form validation for jobs_application.html
+// Filename: FormVal.js
+// Modification history:
+
+
 let name 	= document.getElementById("navn");
 let adress 	= document.getElementById("adresse");
 let email 	= document.getElementById("epost");
@@ -8,7 +15,7 @@ let whyB 	= document.getElementById("hvorforBedre");
 
 
 function mcheck(){
-	// console.log("ME")
+	// Sjekker om alt er fylt ut
 	a = name.value		!= "";
 	b = adress.value 	!= "";
 	c = email.value		!= "";
@@ -23,6 +30,8 @@ function mcheck(){
 		console.log("NAY");
 	};
 };
+
+//Printer ut ting i konsollen i stede for å sende det inn til en server
 function allFilled(){
 	console.log("Information sent to server:");
 	console.log("Name: " + name.value);
