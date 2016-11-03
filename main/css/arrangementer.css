@@ -4,6 +4,7 @@
 
 .flexrow-col-2 img {
 	max-width: 400px;
+    display: block;
 }
 
 
@@ -41,6 +42,10 @@ h2 {
         max-width: none;
     }
     .flexrow-col-2 {
-        margin: 0 auto;
+        margin: 20px auto;
+        padding: 5px;
+    }
+    .flexrow-col-2 img {
+        max-width: 100%;
     }
 }

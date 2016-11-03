@@ -29,4 +29,9 @@
 		margin: 0 auto;
 		max-width: 350px;
 	}
+
+	.infobox {
+		padding: 10px;
+		margin: 20px auto;
+	}
 }
