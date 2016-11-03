@@ -12,7 +12,7 @@ let interests = document.getElementById("interesser");
 let exp 	= document.getElementById("erfaring");
 let whyW 	= document.getElementById("hvorforJobb");
 let whyB 	= document.getElementById("hvorforBedre");
-
+let knapp =document.getElementById("knapp");
 
 function mcheck(){
 	// Sjekker om alt er fylt ut
@@ -27,7 +27,8 @@ function mcheck(){
 		allFilled();
 	}
 	else{
-		console.log("NAY");
+		knapp.innerHTML = "Du må fylle inn alle feltene.";
+		knapp.style.visibility = "visible"
 	};
 };
 
@@ -41,5 +42,6 @@ function allFilled(){
 	console.log("Experience: " + exp.value);
 	console.log("Why work here: " + whyW.value);
 	console.log("Why better: " + whyB.value);
-	alert("Skjemaet er senndt inn")
+	document.getElementById("myFormId").submit();
+	alert("Skjemaet er senndt inn");
 };
