@@ -221,7 +221,6 @@ main {
 .flexrow-image_right-2el {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 900px;
 }
 
 .flexrow-image_right-2el .flexrow-col-1 {

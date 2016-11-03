@@ -1,12 +1,32 @@
 .infobox {
 	border-style: solid;
-	padding-top: 0px;
-	padding: 5px;
-	max-width: 500px;
+	padding: 20px;
+	max-width: 600px;
+	margin: 40px;
 }
 
 
 .infobox h4 {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
+.flexrow-col-2 figure {
+	display: block;
+	margin: 20px;
+	max-width: 600px;
+}
+
+.flexrow-col-2 {
+	width: 600px;
+}
+
+@media screen and (max-width: 700px) {
+	.center_image {
+		width: 100%;
+	}
+	.fig-img {
+		float: none;
+		margin: 0 auto;
+		max-width: 350px;
+	}
+}
