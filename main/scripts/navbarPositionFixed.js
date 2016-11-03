@@ -45,6 +45,7 @@ function closeDropdownMenu(event) {
     if (event.target.matches("#navbar-menu-icon") || event.target.matches("#navbar-menu-icon *")) {return}
     if (!event.target.matches("#navbar *")) { // Did the user click outside the navigation menu?
         let navbarChildren = getListNavbarChildren();
+        if (!navbarChildren.length) {return false;}
         if (navbarChildren[0].firstChild.classList.contains("show")) {
             event.preventDefault();
             for (let i=0; i<navbarChildren.length; i++) {
