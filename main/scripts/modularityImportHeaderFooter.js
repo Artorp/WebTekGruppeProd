@@ -12,7 +12,6 @@
 
 var xhr_navbar = new XMLHttpRequest();
 xhr_navbar.open("get", "modularity/navbar_part.html", true);
-xhr_navbar.responseType = "document";
 xhr_navbar.onreadystatechange = function () {
     if (xhr_navbar.readyState != XMLHttpRequest.DONE) { return false; }
     var navbar_wrapper = document.getElementById("navbar-wrap");
