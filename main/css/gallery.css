@@ -27,6 +27,21 @@ padding: 15px;
 text-align: center;
 }
 
+#bigimage
+{
+    vertical-align : middle;
+    horiz-align: middle
+    position : fixed;
+
+    border: 7px solid ##835C3B;
+    visibility : hidden;
+    height : 480px;
+    width : 720px;
+    z-index : 50;
+    overflow : hidden;
+    text-align : top
+}
+
 
 
 
