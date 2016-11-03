@@ -71,7 +71,8 @@ function Out()
     document.getElementById("bigimage").style.visibility='hidden';
 }
 
-var knappebilder = new Array(5);   // Not working at the moment. Might drop it.
+// All code below this line is not working properly at the moment (buttons)
+var knappebilder = new Array(5);
 knappebilder[0] = "img/arkademaskiner.jpg";
 knappebilder[1] = "img/cocktail_cab.jpg";
 knappebilder[2] = "img/pinball.jpg";
