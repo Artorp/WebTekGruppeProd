@@ -2,18 +2,18 @@
 When: November 2016
 Filename: gallery.js*/
 
-div.img {
+div.picelement {
 	margin: 5px;
 	border: 1px solid #ccc;
 	float: left;
 	width: 180px;
 }
 
-div.img:hover {
+div.picelement:hover {
 	border: 1px solid #777;
 }
 
-div.img img {
+div.picelement img {
 	width: 100%;
 	height: 100%;
 	background-position: 50% 50%;
