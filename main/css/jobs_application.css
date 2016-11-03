@@ -13,12 +13,21 @@ main{
 	position: relative;
 }
 #form{
-	width: 50%;
+	width: 90%;
+	max-width: 420px;
 	/*border-style: solid;*/
 	position: relative;
 	/*transform: translateX(-50%);*/
 	left: 7%;
 	padding-bottom: 5%;
+}
+#knapp{
+	margin-top: 15px;
+	visibility: hidden;
+	border-style: solid;
+	border-color: #8B4C39;
+	border-width: 2px;
+	padding: 3px;
 }
 input{
 	width: 100%;
