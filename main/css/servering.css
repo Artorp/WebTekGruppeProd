@@ -1,6 +1,11 @@
 td:nth-child(2) {
 	text-align: right;
 }
+
+.flexrow-image_right-2el {
+	margin-bottom: 20px;
+}
+
 .flexrow-col-1 {
 	padding: 20px;
 	border: 1px solid black;
@@ -39,10 +44,12 @@ th, td {
 
 	.flexrow-col-2 {
 		width: 100%;
+		padding: 0;
 	}
 
 	.flexrow-col-2 img {
-		margin: 0 auto;
+		margin: 20px auto;
+		max-width: 100%;
 	}
 }
 
