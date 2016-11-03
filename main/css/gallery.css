@@ -1,73 +1,60 @@
 /* Author: Andreas
 When: November 2016
 Filename: gallery.js*/
-/*   Eksempel på hvordan bildegalleri kan se ut? (Ingen Javascript)*/
-div.img {
-margin: 5px;
-border: 1px solid #ccc;
-float: left;
-width: 180px;
 
+div.img {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
 }
 
 div.img:hover {
-border: 1px solid #777;
+	border: 1px solid #777;
 }
 
 div.img img {
-width: 100%;
-height: 100%;
-background-position: 50% 50%;
-background-repeat:   no-repeat;
-background-size:     cover;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 div.desc {
-padding: 15px;
-text-align: center;
+	padding: 15px;
+	text-align: center;
 }
 
-#bigimage
-{
-    vertical-align : middle;
-    horiz-align: middle
-    position : fixed;
-
-    border: 7px solid ##835C3B;
-    visibility : hidden;
-    height : 480px;
-    width : 720px;
-    z-index : 50;
-    overflow : hidden;
-    text-align : top
+#bigimage {
+	vertical-align: middle;
+	position: fixed;
+	border: 7px solid #835C3B;
+	visibility: hidden;
+	height: 480px;
+	width: 720px;
+	z-index: 50;
+	overflow: hidden;
+	text-align: right;
 }
-
-
-
-
 
 @media only screen and (max-device-width: 480px) {
-		div#wrapper {
-			width: 400px;
-		}
-
-		div#header {
-
-			height: 95px;
-			position: relative;
-		}
-
-		div#header h1 {
-			font-size: 150%;
-		}
-
-		#content {
-			float: none;
-			width: 100%;
-		}
-
-		#navigation {
-			float:none;
-			width: auto;
-		}
+	div#wrapper {
+		width: 400px;
 	}
+	div#header {
+		height: 95px;
+		position: relative;
+	}
+	div#header h1 {
+		font-size: 150%;
+	}
+	#content {
+		float: none;
+		width: 100%;
+	}
+	#navigation {
+		float: none;
+		width: auto;
+	}
+}
