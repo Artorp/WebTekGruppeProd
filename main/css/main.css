@@ -218,22 +218,22 @@ main {
 
 /* Flexbox image wrapping for responsive design */
 
-.flex-text-img {
+.flexrow-image_right-2el {
     display: flex;
     flex-flow: row nowrap;
     max-width: 900px;
 }
 
-.flex-text-img .text_left {
+.flexrow-image_right-2el .flexrow-col-1 {
     flex-grow: 1;
 }
 
 @media screen and (max-width: 550px) {
-    .flex-text-img {
+    .flexrow-image_right-2el {
         flex-direction: column;
     }
 
-    .flex-text-img .flexrow-col2 {
+    .flexrow-image_right-2el .flexrow-col-2 {
         order: -1;
     }
 }
