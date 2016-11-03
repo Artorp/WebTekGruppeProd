@@ -2,7 +2,7 @@
  * Created by Thomas on 2016-10-13.
  */
 var addEvent = function (object, type, callback) {
-    if (object == null || typeof(object) == 'undefined') return;
+    if (object == null || typeof(object) == 'undefined') { return false; }
     if (object.addEventListener) {
         object.addEventListener(type, callback, false);
     } else if (object.attachEvent) {
@@ -17,7 +17,7 @@ function onlyLi(someEl) {
 }
 
 function getListNavbarChildren() {
-    let navbarEl = document.getElementById("navbar");
+    var navbarEl = document.getElementById("navbar");
     if (navbarEl) {
         // Convert nodeList to array
         let childrenArray = Array.prototype.slice.call(navbarEl.childNodes);
@@ -26,7 +26,7 @@ function getListNavbarChildren() {
 }
 
 function showDropdown(menu) {
-    let children = getListNavbarChildren();
+    var children = getListNavbarChildren();
     for (let i=0; i<children.length; i++) {
         children[i].firstChild.classList.toggle("show");
     }
@@ -40,11 +40,12 @@ function showDropdown(menu) {
 
 // If the user clicks outside the dropdown menu, close the menu
 function closeDropdownMenu(event) {
-    if (typeof event.target.matches != "function") {return} // Is matches() allowed?
+    if (typeof event.target.matches != "function") {return false;} // Is matches() allowed?
     // Did user click the menu icon? If so, ignore.
     if (event.target.matches("#navbar-menu-icon") || event.target.matches("#navbar-menu-icon *")) {return}
     if (!event.target.matches("#navbar *")) { // Did the user click outside the navigation menu?
         let navbarChildren = getListNavbarChildren();
+        if (!navbarChildren.length) {return false;}
         if (navbarChildren[0].firstChild.classList.contains("show")) {
             event.preventDefault();
             for (let i=0; i<navbarChildren.length; i++) {
@@ -59,7 +60,7 @@ function closeDropdownMenu(event) {
 }
 
 function resizePushEl() {
-    let height = 10;
+    var height = 10;
     if (document.getElementsByClassName("active").length) {
         height = document.getElementsByClassName("active")[0].getBoundingClientRect().height;
         document.getElementById("navbar-menu-icon").style.height = height + "px";

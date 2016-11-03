@@ -12,15 +12,16 @@
 
 var xhr_navbar = new XMLHttpRequest();
 xhr_navbar.open("get", "modularity/navbar_part.html", true);
+xhr_navbar.responseType = "document";
 xhr_navbar.onreadystatechange = function () {
-    if (xhr_navbar.readyState != XMLHttpRequest.DONE) return;
-    let navbar_wrapper = document.getElementById("navbar-wrap");
-    if (!navbar_wrapper) { return }
+    if (xhr_navbar.readyState != XMLHttpRequest.DONE) { return false; }
+    var navbar_wrapper = document.getElementById("navbar-wrap");
+    if (!navbar_wrapper) { return false; }
     navbar_wrapper.innerHTML = xhr_navbar.responseText;
     // Set active navbar item class
-    let myURL = window.location.pathname; // IE /main/contact.html
-    let myFilename = myURL.substring(myURL.lastIndexOf("/")+1); // IE contact.html
-    let navbar_items = document.getElementsByClassName("navbar_item");
+    var myURL = window.location.pathname; // IE /main/contact.html
+    var myFilename = myURL.substring(myURL.lastIndexOf("/") + 1); // IE contact.html
+    var navbar_items = document.getElementsByClassName("navbar_item");
     for (let i = 0; i < navbar_items.length; i++) {
         if (myFilename == navbar_items[i].getAttribute("href")) {
             navbar_items[i].className = "active";
@@ -41,7 +42,7 @@ var xhr_footer = new XMLHttpRequest();
 xhr_footer.open("get", "modularity/footer_part.html", true);
 xhr_footer.onreadystatechange = function () {
     if (xhr_footer.readyState != XMLHttpRequest.DONE) return;
-    let footer_wrapper = document.getElementById("footer-wrap");
+    var footer_wrapper = document.getElementById("footer-wrap");
     if (!footer_wrapper) { return }
     footer_wrapper.innerHTML = xhr_footer.responseText;
 };
