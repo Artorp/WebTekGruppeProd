@@ -1,0 +1,14 @@
+/* Filename: contact.css */
+#map-wrap {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}

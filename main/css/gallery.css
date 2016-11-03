@@ -1,4 +1,6 @@
-/* CSS.bildegalleri */
+/* Author: Andreas
+When: November 2016
+Filename: gallery.js*/
 /*   Eksempel på hvordan bildegalleri kan se ut? (Ingen Javascript)*/
 div.img {
 margin: 5px;
@@ -35,7 +37,7 @@ text-align: center;
 		}
 
 		div#header {
-			
+
 			height: 95px;
 			position: relative;
 		}

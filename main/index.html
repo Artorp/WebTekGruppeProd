@@ -4,7 +4,6 @@ Year: 2016
 Purpose: ArkadenKafe main page
 Filename: index.html
 -->
-
 <html lang="no">
 <head>
     <meta charset="utf-8">
@@ -14,7 +13,7 @@ Filename: index.html
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
-<body>
+<body class="clearfix">
 <header>
     <div id="navbar-wrap">This content will be provided by javascript</div>
     <div class="banner">
@@ -24,9 +23,16 @@ Filename: index.html
 </header>
 <main>
     <h1>Velkommen til oss!</h1>
+    <figure class="fig-img float-right">
+        <img src="img/Jim-Nix_A-busy-bar-in-Brussels_thump_w400px.jpg" alt="JimNix" title="Inngangspartiet">
+        <figcaption>Inngangspartiet til kaféen.</figcaption>
+    </figure>
     <p>Arkaden Kafé er en kombinasjon av kafe og arkade med fokus på klassiske videospill og god mat.</p>
     <p>Vi tilbyr drikker, kaffe, kaker, arkademaskiner, underholdning.</p>
     <p>Du finnes oss på Øya like i ly av St. Olavs. Se kart nederst på sida.</p>
+    <p>Arkaden Kafé tilbyr arkademaskiner til spillfrelste, eller bare for de som er litt nysjerrige.
+        Mer informasjon om maskinene finner du <a href="about2.html">her!</a></p>
+    <p><a href="contact.html">Kontakt oss</a> for å bestille bord, lokalisasjoner, eller for å få levert bakst per bil.</p>
     <h2>Åpningstider:</h2>
     <table>
         <tr>
@@ -42,15 +48,14 @@ Filename: index.html
             <td>11:00 - 01:30</td>
         </tr>
     </table>
-    <p>Arkaden Kafé tilbyr arkademaskiner til spillfrelste, eller bare for de som er litt nysjerrige.
-        Mer informasjon om maskinene finner du <a href="about2.html">her!</a></p>
-    <p><a href="contact.html">Kontakt oss</a> for å bestille bord, lokalisasjoner, eller for å få levert bakst per bil.</p>
     <h3>Her finner du oss!</h3>
     <div id="map-wrap"><div id="map"></div></div>
 </main>
 <footer>
     <div id="footer-wrap"></div>
 </footer>
+<script src="scripts/modularityImportHeaderFooter.js"></script>
+<script src="scripts/navbarPositionFixed.js"></script>
 <script>
     function initMap() {
         var uluru = {lat: 63.421692, lng: 10.383806};
@@ -68,7 +73,5 @@ Filename: index.html
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByPAo_0Wrr4YfZwq6VU79jYRjBVlZAnrc&callback=initMap">
 </script>
-<script src="scripts/modularityImportHeaderFooter.js"></script>
-<script src="scripts/navbarPositionFixed.js"></script>
 </body>
 </html>
