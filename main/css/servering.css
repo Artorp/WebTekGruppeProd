@@ -1,23 +1,48 @@
-
 td:nth-child(2) {
 	text-align: right;
 }
+.flexrow-col-1 {
+	padding: 20px;
+	border: 1px solid black;
+}
 
 .tabell {
-	width: 500px;
-    padding: 20px;
-    border: 1px solid black;
-    margin-bottom: 20px;
-    float: left;
+	width: 100%;
+	border-collapse: collapse;
 }
 
-.img-class {
-	width:350px;
-	margin-left: 20px;
+th, td {
+	padding: 5px;
 }
 
-#tilbud {
-	height: 130px;
-	width: 500px;
+.tabell tr:nth-child(even) {
+	background-color: rgba(72, 72, 72, 0.08);
+}
+
+.flexrow-col-2 {
+	padding: 20px;
+}
+
+.flexrow-col-2 img {
+	display: block;
+	max-width: 350px;
+}
+
+@media screen and (max-width: 600px) {
+	.flexrow-image_right-2el {
+		flex-direction: column;
+	}
+
+	.flexrow-image_right-2el .flexrow-col-2 {
+		order: -1;
+	}
+
+	.flexrow-col-2 {
+		width: 100%;
+	}
+
+	.flexrow-col-2 img {
+		margin: 0 auto;
+	}
 }
 
