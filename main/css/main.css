@@ -215,3 +215,25 @@ main {
 .fig-img img {
     max-width: 100%;
 }
+
+/* Flexbox image wrapping for responsive design */
+
+.flex-text-img {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 900px;
+}
+
+.flex-text-img .text_left {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 550px) {
+    .flex-text-img {
+        flex-direction: column;
+    }
+
+    .flex-text-img .flexrow-col2 {
+        order: -1;
+    }
+}

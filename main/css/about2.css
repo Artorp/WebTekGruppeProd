@@ -1,15 +1,20 @@
-.img_desc {
-	float: right;
+.flexrow-col2 img {
+	display: block;
+	margin: 20px;
+	max-width: 200px;
 }
 
-img {
-	display: block;
+@media screen and (max-width: 550px) {
+	.flex-text-img .flexrow-col2 {
+		margin: 10px auto;
+	}
 }
 
 .text_desc {
 	border-style: solid;
 	padding: 7px;
 	max-width: 900px;
+	margin-bottom: 30px;
 }
 
 .headline_desc {
