@@ -144,9 +144,17 @@ body {
 div.banner {
     width: 100%;
 }
+.banner{
+    position: relative;
+    height: 0;
+    padding-bottom: 25%
+}
 .banner img {
     display: block;
     width: 100%;
+
+    position: absolute;
+    height: 100%;
 }
 
 /* Main section */
