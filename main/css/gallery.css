@@ -27,16 +27,21 @@ div.desc {
 }
 
 #bigimage {
-	margin: top
 	position: relative;
 	border: 20px solid ##FFFF99;
-	box-shadow: 30px 20px 10px #888888;
+	/*box-shadow: 30px 20px 10px #888888;*/
 	visibility: hidden;
 	height: 480px;
-	width: 720px;
-	z-index: 50;
+	width: 100%;
+	/*z-index: 50;*/
 	overflow: hidden;
-	text-align: right;
+}
+
+#bigimage img {
+	display: block;
+	margin: 20px auto;
+	max-width: 720px;
+	max-height: 480px;
 }
 
 @media only screen and (max-device-width: 480px) {

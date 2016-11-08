@@ -31,8 +31,8 @@ function Large(obj) {
     bigimage.style.visibility = 'visible';
     var img = document.createElement("img");
     img.src = obj.src;
-    img.style.width = '720px';
-    img.style.height = '480px';
+    // img.style.maxWidth = '720px';
+    // img.style.maxHeight = '480px';
 
     if (img.addEventListener) {
         img.addEventListener('dblclick', Out, false);
@@ -41,8 +41,8 @@ function Large(obj) {
     }
     bigimage.innerHTML = '';
     bigimage.appendChild(img);
-    bigimage.style.left = (getElementLeft(obj) - 0) + 'px';
-    bigimage.style.top = (getElementTop(obj) - 300) + 'px';
+    //bigimage.style.left = (getElementLeft(obj) - 0) + 'px';
+    //bigimage.style.top = (getElementTop(obj) - 300) + 'px';
 }
 
 function Out() {
