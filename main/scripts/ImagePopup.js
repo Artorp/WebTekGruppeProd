@@ -27,7 +27,7 @@ function addModal() {
 var ModalEl = addModal();
 
 
-classname = document.getElementsByClassName('img');
+classname = document.getElementsByClassName('popup-picture');
 
 
 
