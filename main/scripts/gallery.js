@@ -36,7 +36,7 @@ function Large(obj) {
 
     if (img.addEventListener) {
         img.addEventListener('dblclick', Out, false);
-    } else {dblclick
+    } else {
         img.attachEvent('ondblclick', Out);
     }
     bigimage.innerHTML = '';
@@ -48,6 +48,10 @@ function Large(obj) {
 function Out() {
     document.getElementById("bigimage").style.visibility = 'hidden';
 }
+
+// Set up default picture
+console.log(document.getElementsByClassName("picelement")[0].childNodes[1]);
+Large(document.getElementsByClassName("picelement")[0].childNodes[1]);
 
 /*
  function

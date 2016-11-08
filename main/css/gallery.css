@@ -29,7 +29,6 @@ div.desc {
 #bigimage {
 	position: relative;
 	border: 20px solid ##FFFF99;
-	/*box-shadow: 30px 20px 10px #888888;*/
 	visibility: hidden;
 	height: 480px;
 	width: 100%;
