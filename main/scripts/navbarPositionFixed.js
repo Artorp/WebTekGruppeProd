@@ -38,6 +38,12 @@ function showDropdown(menu) {
     menu.preventDefault(); // Prevent ontouchstart event from triggering onclick
 }
 
+function scrollToTop(event) {
+    event.preventDefault();
+    window.scrollTo(0,0);
+    return false;
+}
+
 // If the user clicks outside the dropdown menu, close the menu
 function closeDropdownMenu(event) {
     if (typeof event.target.matches != "function") {return false;} // Is matches() allowed?
