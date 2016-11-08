@@ -33,10 +33,11 @@ function Large(obj) {
     img.src = obj.src;
     img.style.width = '720px';
     img.style.height = '480px';
+
     if (img.addEventListener) {
-        img.addEventListener('mouseout', Out, false);
-    } else {
-        img.attachEvent('onmouseout', Out);
+        img.addEventListener('dblclick', Out, false);
+    } else {dblclick
+        img.attachEvent('ondblclick', Out);
     }
     bigimage.innerHTML = '';
     bigimage.appendChild(img);
@@ -47,6 +48,17 @@ function Large(obj) {
 function Out() {
     document.getElementById("bigimage").style.visibility = 'hidden';
 }
+
+/*
+ function
+ i++;Knapp() {
+ document.getElementById("bilde").src = ibilde[i];
+ if (i == img_array.length - 1) {
+ i = -1;
+
+ }
+
+
 // All code below this line is not working properly at the moment (buttons)
 var knappebilder = new Array(5);
 knappebilder[0] = "img/arkademaskiner.jpg";
@@ -76,3 +88,4 @@ function gofwd() {
         alert("This is the last image");
     }
 }
+*/

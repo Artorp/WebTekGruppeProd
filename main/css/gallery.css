@@ -27,9 +27,10 @@ div.desc {
 }
 
 #bigimage {
-	vertical-align: middle;
-	position: fixed;
-	border: 7px solid #835C3B;
+	margin: top
+	position: relative;
+	border: 20px solid ##FFFF99;
+	box-shadow: 30px 20px 10px #888888;
 	visibility: hidden;
 	height: 480px;
 	width: 720px;
