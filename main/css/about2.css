@@ -1,14 +1,27 @@
-#pong, #pacman, #space, #pinball {
-	float:right;
+.flexrow-col-2 {
+	max-width: 900px;
 }
 
-#pong-text, #pacman-text, #space-text, #pinball-text{
+.flexrow-col-2 img {
+	display: block;
+	margin: 20px;
+	max-width: 200px;
+}
+
+@media screen and (max-width: 550px) {
+	.flexrow-image_right-2el .flexrow-col-2 {
+		margin: 10px auto;
+	}
+}
+
+.text_desc {
 	border-style: solid;
-	padding: 5px;
-	max-width: 500px;
+	padding: 7px;
+	max-width: 900px;
+	margin-bottom: 30px;
 }
 
-#pong-headline, #pacman-headline, #space-headline, #pinball-headline {
+.headline_desc {
 	margin-top: 8px;
 }
 

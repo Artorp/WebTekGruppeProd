@@ -1,83 +1,80 @@
+<!DOCTYPE html>
+<html lang="no">
 <!-- Author: Andreas
 When: November 2016
 Filename: bildegalleri.html-->
-<!DOCTYPE html>
-<html lang="no">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport"> <!-- Mobile viewport -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Mobile viewport -->
     <title>Bildegalleri</title>
     <link href="img/arkaden_32x32.png" rel="icon" type="image/png">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/gallery.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <div id="navbar-wrap">This content will be provided by javascript</div>
-        <div class="banner"><img src="img/Space_invaders_banner_crop.jpg" alt="Banner for bildegalleri"></div>
-    </header>
-    <main class="clearfix">
-        <section>
-            <h1>Bildegalleri</h1>
-
-            <p>Nysgjerrig på hvordan det ser ut inne hos oss på Arkaden? Det forstår vi godt.
-            Derfor har vi laget et bildegalleri som du kan bla i!
-
-
-            </p>
-            <br>
-
-            <div class="img">
-                 <a href="arkademaskiner.jpg" target="_blank"><img alt="bilde1" height=
-                "200" src="img/arkademaskiner.jpg" width="300"></a>
-                <div class="desc">
-                    Noe for enhver smak!
-                </div>
+<header>
+    <div id="navbar-wrap">
+        This content will be provided by javascript
+    </div>
+    <div class="banner"><img alt="Banner for bildegalleri" src=
+            "img/Space_invaders_banner_crop.jpg"></div>
+</header>
+<main class="clearfix">
+    <section>
+        <h1>Bildegalleri</h1>
+        <p>Nysgjerrig på hvordan det ser ut inne hos oss på Arkaden? Det forstår vi godt.<br>
+            Derfor har vi laget et bildegalleri, som du kan se på!<br>
+            Klikk på et bilde for å se nærmere på det.</p><br>
+        <div id="bigimage"></div>
+        <div class="picelement">
+            <img alt="bilde1" height="200" onclick="Large(this)" src="img/arkademaskiner.jpg"
+                 width="300">
+            <div class="desc">
+                Noe for enhver smak!
             </div>
-            <div class="img">
-                <a href="cocktail_cab.jpg" target="_blank"><img alt="bilde2" height=
-                "200" src="img/cocktail_cab.jpg" width="300"></a>
-                <div class="desc">
-                    Spill mot en venn!
-                </div>
+        </div>
+        <div class="picelement">
+            <img alt="bilde2" height="200" onclick="Large(this)" src="img/cocktail_cab.jpg"
+                 width="300">
+            <div class="desc">
+                Spill mot en venn!
             </div>
-            <div class="img">
-                <a href="pinball.jpg" target="_blank"><img alt="bilde3" height=
-                "200" src="img/pinball.jpg" width="300"></a>
-                <div class="desc">
-                    En klassiker!
-                </div>
+        </div>
+        <div class="picelement">
+            <img alt="bilde3" height="200" onclick="Large(this)" src="img/pinball.jpg" width=
+                    "300">
+            <div class="desc">
+                En klassiker!
             </div>
-			<div class="img">
-
-                 <a href="kakerkaffe.jpg" target="_blank"><img alt="bilde4" height=
-                "200" src="img/kakerkaffe.jpg" width="300"></a>
-                <div class="desc">
-                    Ta en pause fra spillingen med kaffe og bakst!
-                </div>
+        </div>
+        <div class="picelement">
+            <img alt="bilde4" height="200" onclick="Large(this)" src="img/kakerkaffe.jpg"
+                 width="300">
+            <div class="desc">
+                Ta en pause fra spillingen med kaffe og bakst!
             </div>
-				<div class="img">
-
-                 <a href="Spaceinvaders.jpg" target="_blank"><img alt="bilde5" height=
-                "200" src="img/Spaceinvaders.jpg" width="300"></a>
-                <div class="desc">
-                   Vår første arkademaskin: Space Invaders
-                </div>
+        </div>
+        <div class="picelement">
+            <img alt="bilde5" height="200" onclick="Large(this)" src="img/Spaceinvaders.jpg"
+                 width="300">
+            <div class="desc">
+                Vår første arkademaskin: Space Invaders
             </div>
-
-<p><input type="button" id="nextbutton" value="click me!" onclick="pictureChange()"></p>  <!--Work in progress-->
-        </section>
-    </main>
-    <footer>
-        <div id="footer-wrap"></div>
-    </footer>
-	<!--Javascript her-->
-    <script src="scripts/modularityImportHeaderFooter.js"></script>
-    <script src="scripts/navbarPositionFixed.js"></script>
-	<script src="scripts/gallery.js"></script>
-
-    <noscript>
-    Nettleseren din har ikke støtte for Javascript. Venligst aktiver Javascript for å se bildegalleriet <!--Fallback hvis skripting ikke er aktivert-->
-    </noscript>
+        </div><input id="prev" name="prev" onclick="goback()" type="button" value="PREVIOUS">
+        <input id="next" name="next" onclick="gofwd()" type="button" value="NEXT">
+        <!--<p><input type="button" id="nextbutton" value="click me!" onclick="pictureChange()"></p>  Might not use a button after all-->
+    </section>
+</main>
+<footer>
+    <div id="footer-wrap"></div>
+</footer><!--Javascript her-->
+<script src="scripts/modularityImportHeaderFooter.js">
+</script>
+<script src="scripts/navbarPositionFixed.js">
+</script>
+<script src="scripts/gallery.js">
+</script> <noscript><b>Nettleseren din har enten deaktivert eller ikke støtte for Javascript.
+    Venligst aktiver Javascript eller oppdater nettleseren din. Kun slik kan du se bildegalleriet
+    bildegalleriet</b> <!--Fallback hvis skripting ikke er aktivert--></noscript>
 </body>
 </html>
