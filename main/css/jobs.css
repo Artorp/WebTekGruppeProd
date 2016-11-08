@@ -30,3 +30,7 @@ Modification history:
 a:link{
 	text-decoration: none;
 }
+#jobbsok:hover{
+	background-color: #d3af8d;
+	cursor: default;
+}

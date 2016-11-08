@@ -12,7 +12,7 @@ let interests = document.getElementById("interesser");
 let exp 	= document.getElementById("erfaring");
 let whyW 	= document.getElementById("hvorforJobb");
 let whyB 	= document.getElementById("hvorforBedre");
-let knapp =document.getElementById("knapp");
+let knapp 	= document.getElementById("knapp");
 
 function mcheck(){
 	// Sjekker om alt er fylt ut
@@ -34,14 +34,14 @@ function mcheck(){
 
 //Printer ut ting i konsollen i stede for å sende det inn til en server
 function allFilled(){
-	console.log("Information sent to server:");
-	console.log("Name: " + name.value);
-	console.log("Adress: " + adress.value);
-	console.log("Email: " + email.value);
-	console.log("Interests: " + interests.value);
-	console.log("Experience: " + exp.value);
-	console.log("Why work here: " + whyW.value);
-	console.log("Why better: " + whyB.value);
+	// console.log("Information sent to server:");
+	// console.log("Name: " + name.value);
+	// console.log("Adress: " + adress.value);
+	// console.log("Email: " + email.value);
+	// console.log("Interests: " + interests.value);
+	// console.log("Experience: " + exp.value);
+	// console.log("Why work here: " + whyW.value);
+	// console.log("Why better: " + whyB.value);
+	alert("Skjemaet er sendt inn");
 	document.getElementById("myFormId").submit();
-	alert("Skjemaet er senndt inn");
 };
