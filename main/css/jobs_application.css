@@ -39,3 +39,20 @@ input{
 		margin: 20px auto;
 	}
 }
+#send{
+	padding-top: auto;
+	width: 95px;
+	height: 32px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #bb9776;
+
+	border-style: solid;
+	border-radius: 60px;
+	border-color: black;
+	border-width: 2px;
+}
+#send:hover{
+	background-color: #d3af8d;
+	cursor: default;
+}
