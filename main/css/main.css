@@ -261,7 +261,7 @@ main {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 60px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -276,7 +276,9 @@ main {
     margin: auto;
     display: block;
     width: 80%;
+	max-height: calc(90vh - 50px);
     max-width: 700px;
+    object-fit: contain;
 }
 
 /* Add Animation */
