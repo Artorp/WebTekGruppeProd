@@ -28,7 +28,6 @@ function getElementTop(funk) {
 
 function Large(obj) {
     var bigimage = document.getElementById("bigimage");
-    bigimage.style.visibility = 'visible';
     var img = document.createElement("img");
     img.src = obj.src;
     // img.style.maxWidth = '720px';
