@@ -1,13 +1,3 @@
-var closeModalTimeout = false;
-
-function closeModal() {
-    var theModal = document.getElementById('myModal');
-    if (theModal.style.display != "none" && closeModalTimeout) {
-        closeModalTimeout = false;
-        theModal.classList.add("modal-hidden");
-    }
-}
-
 addEvent(window, "click", closeModal); // If user clicks while modal is open, close it
 
 function addModal() {
@@ -31,10 +21,13 @@ function addModal() {
     document.body.appendChild(node1);
 
 
-    return node1;
+    return [node1, node3];
 }
 
-var ModalEl = addModal();
+var ModalEl;
+var ModalImgEl;
+[ModalEl, ModalImgEl] = addModal();
+
 
 
 var modal_images_HTMLCol = document.getElementsByClassName('popup-picture');
@@ -45,6 +38,9 @@ for (let i = 0; i < modal_images_HTMLCol.length; i++) {
 }
 
 
+var closeModalTimeout = false;
+
+
 function modalPopup(event) {
     // Get the image and insert it inside the modal
     var image_src;
@@ -53,11 +49,26 @@ function modalPopup(event) {
     } else {
         image_src = event.target.src;
     }
-    ModalEl.childNodes[1].src = image_src;
     ModalEl.classList.remove("modal-hidden");
+    ModalImgEl.src = image_src;
+
+    // Replace img element to trigger new animation run
+    ModalImgEl.classList.add("modal-animate");
+    var newElement = ModalImgEl.cloneNode(true);
+    ModalImgEl.parentNode.replaceChild(newElement, ModalImgEl);
+    ModalImgEl = newElement;
 
     // Prevent clicks from instantly closing the modal
     setTimeout(function () {
         closeModalTimeout = true;
     }, 100);
+}
+
+
+function closeModal() {
+    if (!ModalEl.classList.contains("modal-hidden") && closeModalTimeout) {
+        closeModalTimeout = false;
+        ModalEl.classList.add("modal-hidden");
+        ModalImgEl.classList.remove("modal-animate");
+    }
 }

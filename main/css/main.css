@@ -238,7 +238,7 @@ main {
 }
 
 
-/*CSS for modal popup-image */
+/* CSS for modal popup-image */
 /* Style the Image Used to Trigger the Modal */
 .popup-picture {
     border-radius: 5px;
@@ -262,7 +262,7 @@ main {
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Class that's toggled by JS, see ImagePopup.js */
+/* Class that is toggled by JS, see ImagePopup.js */
 .modal-hidden {
     display: none; /* Hidden by default */
 }
@@ -278,7 +278,7 @@ main {
 }
 
 /* Add Animation */
-.modal-image-element, #caption {
+.modal-animate, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -286,13 +286,13 @@ main {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 
