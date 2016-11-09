@@ -23,8 +23,7 @@ function addModal() {
     node2.appendChild(textnode);
 
     let node3 = document.createElement('img');
-    node3.setAttribute('class', 'modal-content');
-    node3.setAttribute('id', 'modal-img-element');
+    node3.setAttribute('class', 'modal-image-element');
 
     node1.appendChild(node2);
     node1.appendChild(node3);
@@ -48,9 +47,16 @@ for (let i = 0; i < modal_images_HTMLCol.length; i++) {
 
 function modalPopup(event) {
     // Get the image and insert it inside the modal
+    var image_src;
+    if (event.target.hasAttribute("data-HD-src")) {
+        image_src = event.target.getAttribute("data-HD-src");
+    } else {
+        image_src = event.target.src;
+    }
+    ModalEl.childNodes[1].src = image_src;
     ModalEl.classList.remove("modal-hidden");
-    document.getElementById("modal-img-element").src = event.target.src;
 
+    // Prevent clicks from instantly closing the modal
     setTimeout(function () {
         closeModalTimeout = true;
     }, 100);
