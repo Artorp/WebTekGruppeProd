@@ -17,23 +17,17 @@ Filename: index.html
 <header>
     <div id="navbar-wrap">This content will be provided by javascript</div>
     <div class="banner">
-        <img src="img/header_index.jpg" alt="Bilde av kaffe">
+        <img src="img/header_index.jpg" srcset="img/header_index_mobile.jpg 360w, img/header_index_small.jpg 720w, img/header_index.jpg 1280w" sizes="100vw" alt="Bilde av kaffe">
         <img id="arkaden-svg" src="img/ArkadenLogo.svg" alt="Arkaden kafe logo">
     </div>
 </header>
 <main>
-    <h1>Velkommen til oss!</h1>
     <figure class="fig-img float-right">
-        <img src="img/Jim-Nix_A-busy-bar-in-Brussels_thump_w400px.jpg" alt="JimNix" title="Inngangspartiet" class = 'popup-picture' id = 'inngang'>
+        <img src="img/Jim-Nix_A-busy-bar-in-Brussels_thump_w400px.jpg" alt="JimNix" title="Inngangspartiet" class='popup-picture'
+        data-HD-src="img/Jim-Nix_A-busy-bar-in-Brussels.jpg">
         <figcaption>Inngangspartiet til kaféen.</figcaption>
     </figure>
-    <p>Arkaden Kafé er en kombinasjon av kafe og arkade med fokus på klassiske videospill og god mat.</p>
-    <p>Vi tilbyr drikker, kaffe, kaker, arkademaskiner, underholdning.</p>
-    <p>Du finnes oss på Øya like i ly av St. Olavs. Se kart nederst på sida.</p>
-    <p>Arkaden Kafé tilbyr arkademaskiner til spillfrelste, eller bare for de som er litt nysjerrige.
-        Mer informasjon om maskinene finner du <a href="about2.html">her!</a></p>
-    <p><a href="contact.html">Kontakt oss</a> for å bestille bord, lokalisasjoner, eller for å få levert bakst per bil.</p>
-    <h2>Åpningstider:</h2>
+    <h1>Åpningstider:</h1>
     <table>
         <tr>
             <td>Man - Tor,</td>
@@ -48,6 +42,13 @@ Filename: index.html
             <td>11:00 - 01:30</td>
         </tr>
     </table>
+    <h2>Velkommen til oss!</h2>
+    <p>Arkaden Kafé er en kombinasjon av kafe og arkade med fokus på klassiske videospill og god mat.</p>
+    <p>Vi tilbyr drikker, kaffe, kaker, arkademaskiner, underholdning.</p>
+    <p>Du finnes oss på Øya like i ly av St. Olavs. Se kart nederst på sida.</p>
+    <p>Arkaden Kafé tilbyr arkademaskiner til spillfrelste, eller bare for de som er litt nysjerrige.
+        Mer informasjon om maskinene finner du <a href="about2.html">her!</a></p>
+    <p><a href="contact.html">Kontakt oss</a> for å bestille bord, lokalisasjoner, eller for å få levert bakst per bil.</p>
     <h3>Her finner du oss!</h3>
     <div id="map-wrap"><div id="map"></div></div>
 </main>

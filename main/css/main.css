@@ -144,17 +144,9 @@ body {
 div.banner {
     width: 100%;
 }
-.banner{
-    position: relative;
-    height: 0;
-    padding-bottom: 25%
-}
 .banner img {
     display: block;
     width: 100%;
-
-    position: absolute;
-    height: 100%;
 }
 
 /* Main section */
@@ -246,7 +238,7 @@ main {
 }
 
 
-/*CSS for modal popup-image */
+/* CSS for modal popup-image */
 /* Style the Image Used to Trigger the Modal */
 .popup-picture {
     border-radius: 5px;
@@ -258,10 +250,8 @@ main {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -269,18 +259,29 @@ main {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+    /* Center image vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Class that is toggled by JS, see ImagePopup.js */
+.modal-hidden {
+    display: none; /* Hidden by default */
 }
 
 /* Modal Content (Image) */
-.modal-content {
+.modal-image-element {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-width: 80%;
+	max-height: calc(90vh - 50px);
+    object-fit: contain;
 }
 
 /* Add Animation */
-.modal-content, #caption {
+.modal-animate, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -288,13 +289,13 @@ main {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)}
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 

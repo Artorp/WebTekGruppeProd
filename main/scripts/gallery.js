@@ -28,25 +28,40 @@ function getElementTop(funk) {
 
 function Large(obj) {
     var bigimage = document.getElementById("bigimage");
-    bigimage.style.visibility = 'visible';
     var img = document.createElement("img");
     img.src = obj.src;
-    img.style.width = '720px';
-    img.style.height = '480px';
+    // img.style.maxWidth = '720px';
+    // img.style.maxHeight = '480px';
+
     if (img.addEventListener) {
-        img.addEventListener('mouseout', Out, false);
+        img.addEventListener('dblclick', Out, false);
     } else {
-        img.attachEvent('onmouseout', Out);
+        img.attachEvent('ondblclick', Out);
     }
     bigimage.innerHTML = '';
     bigimage.appendChild(img);
-    bigimage.style.left = (getElementLeft(obj) - 0) + 'px';
-    bigimage.style.top = (getElementTop(obj) - 300) + 'px';
+    //bigimage.style.left = (getElementLeft(obj) - 0) + 'px';
+    //bigimage.style.top = (getElementTop(obj) - 300) + 'px';
 }
 
 function Out() {
     document.getElementById("bigimage").style.visibility = 'hidden';
 }
+
+// Set up default picture
+console.log(document.getElementsByClassName("picelement")[0].childNodes[1]);
+Large(document.getElementsByClassName("picelement")[0].childNodes[1]);
+
+/*
+ function
+ i++;Knapp() {
+ document.getElementById("bilde").src = ibilde[i];
+ if (i == img_array.length - 1) {
+ i = -1;
+
+ }
+
+
 // All code below this line is not working properly at the moment (buttons)
 var knappebilder = new Array(5);
 knappebilder[0] = "img/arkademaskiner.jpg";
@@ -76,3 +91,4 @@ function gofwd() {
         alert("This is the last image");
     }
 }
+*/
