@@ -23,7 +23,8 @@ xhr_navbar.onreadystatechange = function () {
     var navbar_items = document.getElementsByClassName("navbar_item");
     for (let i = 0; i < navbar_items.length; i++) {
         if (myFilename == navbar_items[i].getAttribute("href")) {
-            navbar_items[i].className = "active";
+            addEvent(navbar_items[i], "click", scrollToTop);
+            navbar_items[i].className = "active"; // Obs, this changes the navbar_items array
             break;
         }
     }

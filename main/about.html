@@ -16,14 +16,16 @@ Filename: about.html
 <body>
 <header>
     <div id="navbar-wrap">This content will be provided by javascript</div>
-    <div class="banner"><img src='img/header_about.jpg' alt='Om kaféen!'></div>
+    <div class="banner"><img src='img/header_about.jpg' srcset="img/header_about_mobile.jpg 360w, img/header_about_small.jpg 720w, img/header_about.jpg 1280w" sizes="100vw" alt='Om kaféen!'></div>
 </header>
 <main>
     <h2>Om Kaféen</h2>
     <div class="clearfix">
         <div class="center_image">
             <figure class="fig-img float-right">
-                <img src="img/Ahmadullah_thumb_w350px.jpg" alt="ahmadullah" title="ahmadullah">
+                <img src="img/Ahmadullah_thumb_w350px.jpg"
+                     data-HD-src="img/Ahmadullah.jpg"
+                     alt="ahmadullah" title="ahmadullah" class="popup-picture">
                 <figcaption>Arkaden er for både store og små</figcaption>
             </figure>
         </div>
@@ -67,5 +69,6 @@ Filename: about.html
 </footer>
 <script src="scripts/modularityImportHeaderFooter.js"></script>
 <script src="scripts/navbarPositionFixed.js"></script>
+<script src='scripts/ImagePopup.js'></script>
 </body>
 </html>

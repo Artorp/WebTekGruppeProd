@@ -18,7 +18,7 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 <body>
 <header>
 	<div id="navbar-wrap">This content will be provided by javascript</div>
-	<div class="banner"><img src="img/header_servering.jpg" alt="Bilde av brød"></div>
+	<div class="banner"><img src="img/header_servering.jpg" srcset="img/header_servering_mobile.jpg 360w, img/header_servering_small.jpg 720w, img/header_servering.jpg 1280w" sizes="100vw" alt="Bilde av brød"></div>
 </header>
 
 <main class="clearfix">
@@ -35,27 +35,7 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 					<td> 15,-</td>
 				</tr>
 				<tr>
-					<td> Scones</td>
-					<td> 20,-</td>
-				</tr>
-				<tr>
-					<td> Grovt rundstykke</td>
-					<td> 35,-</td>
-				</tr>
-				<tr>
-					<td> Skolebrød</td>
-					<td> 25,-</td>
-				</tr>
-				<tr>
-					<td> Kremboller</td>
-					<td> 25,-</td>
-				</tr>
-				<tr>
-					<td> Kakestykke</td>
-					<td> 20,-</td>
-				</tr>
-				<tr>
-					<td> Smurte lefser</td>
+					<td> Croissant</td>
 					<td> 15,-</td>
 				</tr>
 				<tr>
@@ -63,7 +43,27 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 					<td> 15,-</td>
 				</tr>
 				<tr>
-					<td> Croissant</td>
+					<td> Grovt rundstykke</td>
+					<td> 35,-</td>
+				</tr>
+				<tr>
+					<td> Kakestykke</td>
+					<td> 20,-</td>
+				</tr>
+				<tr>
+					<td> Kremboller</td>
+					<td> 25,-</td>
+				</tr>
+				<tr>
+					<td> Scones</td>
+					<td> 20,-</td>
+				</tr>
+				<tr>
+					<td> Skolebrød</td>
+					<td> 25,-</td>
+				</tr>
+				<tr>
+					<td> Smurte lefser</td>
 					<td> 15,-</td>
 				</tr>
 				<tr>
@@ -73,7 +73,7 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 			</table>
 		</div>
 		<div class="flexrow-col-2">
-			<img src="img/kaffe.jpg" alt="Kaffe">
+			<img src="img/kaffe.jpg" alt="Kaffe" class = 'popup-picture'>
 		</div>
 	</div>
 
@@ -117,7 +117,7 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 			</table>
 		</div>
 		<div class="flexrow-col-2">
-			<img src="img/kaker.jpg" alt="Brød">
+			<img src="img/kaker.jpg" alt="Brød" class = 'popup-picture'>
 		</div>
 	</div>
 </main>
@@ -126,5 +126,6 @@ HENSIKT: Beskrive hva som serveres i kafeen og informere om pris
 </footer>
 <script src="scripts/modularityImportHeaderFooter.js"></script>
 <script src="scripts/navbarPositionFixed.js"></script>
+<script src = 'scripts/ImagePopup.js'> </script>
 </body>
 </html>
