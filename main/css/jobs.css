@@ -27,7 +27,7 @@ Modification history:
 	border-color: black;
 	border-width: 2px;
 }
-a:link{
+#jobbsok a:link{
 	text-decoration: none;
 }
 #jobbsok:hover{
