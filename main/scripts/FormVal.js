@@ -38,6 +38,13 @@ function mcheck(){
 // Noterer brukeren om at skjemaet er fylt inn og sender inn
 // skjemaet
 function allFilled(){
+	// Slik som det er nå vil blukeren nå beskjed om
+	// at skjemaet er sendt inn før det blir det.
+	// Hvis brukeren for eksempel skrir av PC'en før 
+	// han/hun trykker OK, vil ikke skjemaet bli sendt 
+	// inn. Siden vi ikke har en server til å behandle
+	// skjemaene, var dette den letteste måten å gjøre
+	// det på.
 	alert("Skjemaet er sendt inn");
 	document.getElementById("myFormId").submit();
 };
