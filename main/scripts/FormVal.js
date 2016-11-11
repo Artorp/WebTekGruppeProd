@@ -4,7 +4,7 @@
 // Filename: FormVal.js
 // Modification history:
 
-
+// Variabler
 let name 	= document.getElementById("navn");
 let adress 	= document.getElementById("adresse");
 let email 	= document.getElementById("epost");
@@ -14,6 +14,9 @@ let whyW 	= document.getElementById("hvorforJobb");
 let whyB 	= document.getElementById("hvorforBedre");
 let knapp 	= document.getElementById("knapp");
 
+// Sjekker om alle feltene er fylt inn og hvis de er det
+// kjører funksjonen allFilled(), ellers ber den brukeren
+// om å fylle inn alle feltene.
 function mcheck(){
 	// Sjekker om alt er fylt ut
 	a = name.value		!= "";
@@ -32,16 +35,9 @@ function mcheck(){
 	};
 };
 
-//Printer ut ting i konsollen i stede for å sende det inn til en server
+// Noterer brukeren om at skjemaet er fylt inn og sender inn
+// skjemaet
 function allFilled(){
-	// console.log("Information sent to server:");
-	// console.log("Name: " + name.value);
-	// console.log("Adress: " + adress.value);
-	// console.log("Email: " + email.value);
-	// console.log("Interests: " + interests.value);
-	// console.log("Experience: " + exp.value);
-	// console.log("Why work here: " + whyW.value);
-	// console.log("Why better: " + whyB.value);
 	alert("Skjemaet er sendt inn");
 	document.getElementById("myFormId").submit();
 };
