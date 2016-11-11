@@ -241,7 +241,10 @@ main {
 }
 
 
-/* CSS for modal popup-image */
+
+/* CSS for modal popup-image
+Inspiration from the modal images tutorial from W3 Schools.
+Code changed to fit our needs */
 /* Style the Image Used to Trigger the Modal */
 .popup-picture {
     border-radius: 5px;
@@ -270,7 +273,7 @@ main {
     align-items: center;
 }
 
-/* Class that is toggled by JS, see ImagePopup.js */
+/* Class that is toggled by JS, see picturePopup.js */
 .modal-hidden {
     display: none; /* Hidden by default */
 }
