@@ -3,8 +3,15 @@ Year: 2016
 Purpose: JavaScript for the modal popup pictures
 Filename: picturePopup.js */
 
+/*Inspirasjon hentet fra W3-Schools sin tutorial om modale bilder.
+http://www.w3schools.com/howto/howto_css_modal_images.asp
+
+Koden er endret flere steder for å legge til funksjonalitet til å passe siden vår bedre. */ 
+
 addEvent(window, "click", closeModal); 
 
+
+//Funksjon som legger til HTML'en som er nødvendig for de modale bildene inn i det relavante dokumentet
 function addModal() {
     let node1 = document.createElement('div');
     node1.setAttribute('id', 'myModal');
