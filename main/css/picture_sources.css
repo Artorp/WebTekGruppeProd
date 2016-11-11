@@ -1,0 +1,80 @@
+/* Author: Thomas
+*  Year: 2016
+*  Purpose: Styling for picture_sources.html
+*  Filename: picture_sources.css
+*/
+
+/* Import Google Fonts */
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+/* CSS styling */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Box sizing, inherit for cascading */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Lenker styling */
+a:link,
+a:visited {
+    color: #232323;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3e3e3e;
+}
+
+/* Fonts */
+html {
+    font-family: 'Lora', serif;
+    font-size: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open sans", sans-serif;
+}
+
+/* Flexbox positioning */
+body {
+    background-color: #eaeaea;
+    min-height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+header,
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 5px 20px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+footer {
+    padding: 0 15px;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.50;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
