@@ -1,24 +1,10 @@
-.infobox {
-	border-style: solid;
-	padding: 20px;
-	max-width: 600px;
-	margin: 40px;
-}
+/* Author: Hans, Thomas
+Year: 2016
+Purpose: Styling for "Om kaféen"
+Filename: about.css
+*/
 
-
-.infobox h4 {
-	margin-top: 0;
-}
-
-.flexrow-col-2 figure {
-	display: block;
-	margin: 20px;
-	max-width: 600px;
-}
-
-.flexrow-col-2 {
-	width: 600px;
-}
+/* All annen styling til about.css, er foretatt i main.css */
 
 @media screen and (max-width: 700px) {
 	.center_image {
@@ -28,10 +14,5 @@
 		float: none;
 		margin: 0 auto;
 		max-width: 350px;
-	}
-
-	.infobox {
-		padding: 10px;
-		margin: 20px auto;
 	}
 }

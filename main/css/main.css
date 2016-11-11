@@ -1,7 +1,8 @@
 /* Author: Thomas, Hans (modal pictures)
-Year: 2016
-Purpose: Main styling for the webpage
-Filename: main.css */
+*  Year: 2016
+*  Purpose: Main styling for the webpage
+*  Filename: main.css
+*/
 
 /* Import Google Fonts */
 @import 'https://fonts.googleapis.com/css?family=Lora';
@@ -99,7 +100,6 @@ body {
     padding: 10px 10px;
     height: 41px; /* updated with JS, see navbarPositionFixed.js */
     z-index: 15;
-    cursor: hand;
     cursor: pointer;
     background-color: #c84f25;
     border-top: 1px solid rgba(255, 255, 255, 0.36);
@@ -118,7 +118,7 @@ body {
     display: block;
 }
 
-/* Collapse navbar */
+/* Collapse navbar on mobile screen sizes */
 @media screen and (max-width: 550px) {
     #navbar-menu-icon {
         display: block;
@@ -245,7 +245,7 @@ main {
 /* Style the Image Used to Trigger the Modal */
 .popup-picture {
     border-radius: 5px;
-    cursor: pointer;
+    cursor: zoom-in;
     transition: 0.3s;
 }
 
@@ -255,6 +255,7 @@ main {
 .modal {
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
+    cursor: zoom-out;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -281,6 +282,7 @@ main {
     max-width: 80%;
 	max-height: calc(90vh - 50px);
     object-fit: contain;
+    cursor: zoom-out;
 }
 
 /* Add Animation */

@@ -1,6 +1,12 @@
 /**
  * Created by Thomas on 2016-10-13.
  */
+
+
+/*
+* Generic function for addEventListener
+* Note: Is also used by other scripts
+* */
 var addEvent = function (object, type, callback) {
     if (object == null || typeof(object) == 'undefined') { return false; }
     if (object.addEventListener) {
@@ -25,7 +31,11 @@ function getListNavbarChildren() {
     }
 }
 
-function showDropdown(menu) {
+/*
+* Function: showDropdown
+* Purpose: Show dropdown menu of collapsed navbar (mobile view)
+* */
+function showDropdown(event) {
     var children = getListNavbarChildren();
     for (let i=0; i<children.length; i++) {
         children[i].firstChild.classList.toggle("show");
@@ -35,16 +45,23 @@ function showDropdown(menu) {
     if (!document.getElementsByClassName("active").length) {
         navbarChildren[0].firstChild.classList.add("show");
     }
-    menu.preventDefault(); // Prevent ontouchstart event from triggering onclick
+    event.preventDefault(); // Prevent ontouchstart event from triggering onclick
 }
 
+/*
+* Function: scrollToTop
+* Purpose: Scroll user to top of document
+* */
 function scrollToTop(event) {
     event.preventDefault();
     window.scrollTo(0,0);
     return false;
 }
 
-// If the user clicks outside the dropdown menu, close the menu
+/*
+* Function: closeDropdownMenu
+* Purpose: Close the dropdown menu when user clicks on menu icon or outside the menu
+* */
 function closeDropdownMenu(event) {
     if (typeof event.target.matches != "function") {return false;} // Is matches() allowed?
     // Did user click the menu icon? If so, ignore.
@@ -58,13 +75,17 @@ function closeDropdownMenu(event) {
                 navbarChildren[i].firstChild.classList.remove("show");
             }
         }
-        // Is the page a main element?
+        // Is this page linked and navbar has an "active" class? If not, display menu.
         if (!document.getElementsByClassName("active").length) {
             navbarChildren[0].firstChild.classList.add("show");
         }
     }
 }
 
+/*
+* Function: resizePushEl
+* Purpose: Set the #navbar-push element height to #navbar height
+* */
 function resizePushEl() {
     var height = 10;
     if (document.getElementsByClassName("active").length) {
@@ -80,5 +101,7 @@ function resizePushEl() {
     document.getElementById("navbar-push").style.height = height + "px";
 }
 
+
+// Attach event listeners
 addEvent(window, "resize", resizePushEl);
 addEvent(window, "click", closeDropdownMenu);
