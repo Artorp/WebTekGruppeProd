@@ -33,19 +33,23 @@ Filename: P3_changes.html
         <ul>
             <li>Felles designendringer
                 <ul>
-                    <li></li>
+                    <li>Bilder blir svakt hvitt når de blir hovert over.</li>
+                    <li>Bredden på siden er 1000px istedet for 1200px, som så litt mer innbydende ut.</li>
+                    <li>Teksten i footeren er noe endret, og dersom man hoverer over "Webtek gruppeprosjekt 2016" vil man kunne gå til bildekildene, og se hvem som var på gruppa vår.</li>
+                    <li>Utover det fulgte vi hovedstylingen vi planla å bruke i P2.</li>
                 </ul>
             </li>
 
             <li>index.html
                 <ul>
-                    <li></li>
+                    <li>Hovedsiden fulgte designet vi planla i P2 til punkt og prikke.</li>
+                    <li>Lokalisjon som var planlagt i P2 ble implementert via en Google Maps embed, i tillegg til at adressen ble skrevet ned på forsiden.</li>
                 </ul>
             </li>
 
             <li>contact.html
                 <ul>
-                    <li></li>
+                    <li>Også kontaktsiden var lik designet, vi la også til åpningstidene og en Google Maps embed.</li>
                 </ul>
             </li>
 
@@ -94,6 +98,22 @@ Filename: P3_changes.html
                 </ul>
             </li>
         </ul>
+    </section>
+    <section>
+        <h2>Endringer til javascript-filene</h2>
+        <p>Vi gjorde disse endringene til JS-filene vi planla i P2:</p>
+        <ol>
+            <li>Ny JS fil: navbarPositionFixed.js
+                <br>
+                Denne scriptet åpner drop-down menyen i en kollapset navigasjonsbar, og sørger for at navigasjonsbaren dytter siden nedover.</li>
+            <li>Fjernet: fade.js
+                <br>
+                Vi endte opp med å gå fra idéen om en banner som fader vekk.</li>
+            <li>Fjernet: rotatePictures.js
+                <br>
+                Vi endte opp med å gå fra idéen om en banner som roteter mellom flere sider og heller bruke forskjellige bilder på de ulike sidene.</li>
+        </ol>
+        De øvrige scriptene fulgte designet vi planla.
     </section>
     <section>
         <h2>Oppdatert organisjonsplan</h2>
@@ -358,6 +378,25 @@ Filename: P3_changes.html
                 <td>Alle</td>
             </tr>
         </table>
+    </section>
+    <section>
+        <h2>Minimumskrav</h2>
+        <p>Vi oppfylte minimumskravene til javaskript på disse måtene:</p>
+        <ol>
+            <li>Thomas lagde drop-down menyen for navigasjonsbaren når siden blir mindre i bredden (reponsive design).</li>
+            <li>Andreas lage bildegalleriet som styres av javascript.</li>
+            <li>Hans, Helle og Thomas lagde koden for modal bilde.</li>
+            <li>Tor validerte jobbsøknaden.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Bilder og illustrasjoner</h2>
+        <p>Vi hentet bilder med frie lisenser fra nettet. En oversikt av bildesidene kan sees via <a href="http://folk.ntnu.no/thombruv/picture_sources.html">picture_sources.html</a>, den er også tilgjengelig via en lenke i footeren, dersom man hoverer pekeren over "Webtek gruppeprosjekt 2016".</p>
+    </section>
+    <section>
+        <h2>Modularitetskrav</h2>
+        <p>Thomas implementerte modularitet ved bruk av Javascript, scripten <code>modularityImportHeaderFooter.js</code> importerer headeren og footeren til alle sidene vi brukte.</p>
+        <p>Som et ettertanke må det sies at modularitet via Server Side Includes er bedre enn javascript på mange måter, blant annet raskere innlasting og man unngår å være avhengeg av at javascriptet kjøres.</p>
     </section>
 </main>
 <footer>
