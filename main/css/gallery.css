@@ -12,10 +12,10 @@ div.picelement {
 }
 
 div.picelement:hover {
-	border: 1px solid #777;
+	border: 2px solid #777; /*Show a frame and give an animaition like behaviour when you mouse over image. */
 }
 
-div.picelement img {
+div.picelement img { /* Making sure the picture is where we want it.*/
 	width: 100%;
 	height: 100%;
 	background-position: 50% 50%;
@@ -30,7 +30,6 @@ div.desc {
 
 #bigimage {
 	position: relative;
-	border: 20px solid ##FFFF99;
 	max-height: 480px;
 	width: 100%;
 	overflow: hidden;
