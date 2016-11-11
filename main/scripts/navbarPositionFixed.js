@@ -1,7 +1,12 @@
 /**
  * Created by Thomas on 2016-10-13.
  */
-/* Generic function for addEventListener */
+
+
+/*
+* Generic function for addEventListener
+* Note: Is also used by other scripts
+* */
 var addEvent = function (object, type, callback) {
     if (object == null || typeof(object) == 'undefined') { return false; }
     if (object.addEventListener) {
@@ -81,7 +86,7 @@ function closeDropdownMenu(event) {
 
 /*
 * Function: resizePushEl
-* Purpose: Set the #navbar-push element height to navbar height
+* Purpose: Set the #navbar-push element height to #navbar height
 * */
 function resizePushEl() {
     var height = 10;
@@ -98,5 +103,7 @@ function resizePushEl() {
     document.getElementById("navbar-push").style.height = height + "px";
 }
 
+
+// Attach event listeners
 addEvent(window, "resize", resizePushEl);
 addEvent(window, "click", closeDropdownMenu);
