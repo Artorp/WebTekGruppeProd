@@ -34,8 +34,6 @@ function getListNavbarChildren() {
 /*
 * Function: showDropdown
 * Purpose: Show dropdown menu of collapsed navbar (mobile view)
-* Input: Event.
-* Output: None.
 * */
 function showDropdown(event) {
     var children = getListNavbarChildren();
