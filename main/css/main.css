@@ -255,6 +255,7 @@ main {
 .modal {
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
+    cursor: zoom-out;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
