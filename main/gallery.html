@@ -25,7 +25,7 @@ Purpose: A simple image gallery powered by Javascript-->
         <p>Nysgjerrig på hvordan det ser ut inne hos oss på Arkaden? Det forstår vi godt.<br>
             Derfor har vi laget et bildegalleri, som du kan se på!<br>
             Klikk på et bilde for å se nærmere på det.</p><br>
-        <div id="bigimage"></div>
+        <div id="bigimage"></div> <!--The image that show up when the user click at picelement-->
         <div class="picelement">
             <img alt="arkademaskin" id="bilde1" height="200" onclick="Large(this)" src="img/arkademaskiner.jpg"
                  width="300">
@@ -66,12 +66,13 @@ Purpose: A simple image gallery powered by Javascript-->
 </main>
 <footer>
     <div id="footer-wrap"></div>
-</footer><!--Javascript her-->
-<script src="scripts/modularityImportHeaderFooter.js">
+</footer>
+<script src="scripts/modularityImportHeaderFooter.js"> // Used on every HTML
 </script>
-<script src="scripts/navbarPositionFixed.js">
+<script src="scripts/navbarPositionFixed.js"> // Used on every HTML
 </script>
-<script src="scripts/gallery.js">
+<script src="scripts/gallery.js"> // Only used for gallery.html
+
 </script> <noscript><b>Nettleseren din har enten deaktivert eller ikke støtte for Javascript.
     Venligst aktiver Javascript eller oppdater nettleseren din. Kun slik kan du se bildegalleriet
     bildegalleriet</b> <!--Fallback hvis skripting ikke er aktivert--></noscript>
