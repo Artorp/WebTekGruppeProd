@@ -1,18 +1,18 @@
 /**
  * Created by Thomas on 2016-10-18.
  * NOTE! Loading modular content with javascript is generally bad practice
- * This is only done as a proof-of-concept, and with lack of access to server-side software
+ * This is only done as a proof-of-concept, as an alternative to server-side software
  * A proper way to implement this is to use server-side rendering for the initial view
- * Instead of using client-side rendering for the initial view
+ * instead of using client-side rendering for the initial view
  *
  * Purpose: Load in navbar_part.html and footer_part.html into #navbar-wrap and #footer-wrap
  *
  * This script is loaded at the end of <body>, and will therefore load after the document has been parsed
  */
 
-var xhr_navbar = new XMLHttpRequest();
-xhr_navbar.open("get", "modularity/navbar_part.html", true);
-xhr_navbar.onreadystatechange = function () {
+var xhr_navbar = new XMLHttpRequest(); /* Create new request object */
+xhr_navbar.open("get", "modularity/navbar_part.html", true); /* Request navbar document */
+xhr_navbar.onreadystatechange = function () { /* When request is complete, do this: */
     if (xhr_navbar.readyState != XMLHttpRequest.DONE) { return false; }
     var navbar_wrapper = document.getElementById("navbar-wrap");
     if (!navbar_wrapper) { return false; }
@@ -35,7 +35,7 @@ xhr_navbar.onreadystatechange = function () {
     addEvent(document.getElementById("navbar-menu-icon"), "click", showDropdown);
     addEvent(document.getElementById("navbar-menu-icon"), "touchstart", showDropdown);
 };
-xhr_navbar.send();
+xhr_navbar.send(); /* Start the request */
 
 
 var xhr_footer = new XMLHttpRequest();
