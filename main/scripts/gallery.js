@@ -1,9 +1,12 @@
 /* Author: Andreas
  When: November 2016
  Filename: gallery.js*/
-/*Javascript for gallery.html (bildegalleri)
-
+/*Author: Andreas
+ When: November 2016
+ Filename: gallery.js
+ Purpose: Javascript for "Bildegalleri".
  */
+
 function getElementLeft(funk) {
     var x = 0;
     x = funk.offsetLeft;
@@ -52,43 +55,3 @@ function Out() {
 console.log(document.getElementsByClassName("picelement")[0].childNodes[1]);
 Large(document.getElementsByClassName("picelement")[0].childNodes[1]);
 
-/*
- function
- i++;Knapp() {
- document.getElementById("bilde").src = ibilde[i];
- if (i == img_array.length - 1) {
- i = -1;
-
- }
-
-
-// All code below this line is not working properly at the moment (buttons)
-var knappebilder = new Array(5);
-knappebilder[0] = "img/arkademaskiner.jpg";
-knappebilder[1] = "img/cocktail_cab.jpg";
-knappebilder[2] = "img/pinball.jpg";
-knappebilder[3] = "img/kakerkaffe.jpg";
-knappebilder[4] = "img/Spaceinvaders.jpg";
-var antallbilder = 4;
-var currentbilde = 1;
-
-function backwards() {
-    var im = document.getElementById("bilde1");
-    if (curimg > 0) {
-        im.src = images[curimg - 1];
-        curimg = curimg - 1;
-    } else {
-        alert("This is the first image");
-    }
-}
-
-function gofwd() {
-    var im = document.getElementById("image");
-    if (curimg < numimg) {
-        im.src = images[curimg + 1];
-        curimg = curimg + 1;
-    } else {
-        alert("This is the last image");
-    }
-}
-*/

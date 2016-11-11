@@ -1,3 +1,9 @@
+/*
+FILNAVN: arrangementer.css
+FORFATTER: Helle van den Broek, Thomas Bruvold
+NÅR: November 2016 */
+
+
 .flexrow-col-2 {
     padding: 20px;
 }
@@ -6,7 +12,6 @@
 	max-width: 400px;
     display: block;
 }
-
 
 h2 {
 	font-size: medium;
