@@ -12,7 +12,7 @@ div.picelement {
 }
 
 div.picelement:hover {
-	border: 2px solid #777; /*Show a frame and give an animaition like behaviour when you mouse over image. */
+	border: 2px solid #000000; /*Show a frame and give an animation like behaviour when you mouse over image. */
 }
 
 div.picelement img { /* Making sure the picture is where we want it.*/
