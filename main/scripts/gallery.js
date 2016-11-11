@@ -36,11 +36,7 @@ function Large(obj) {
     // img.style.maxWidth = '720px';
     // img.style.maxHeight = '480px';
 
-    if (img.addEventListener) {
-        img.addEventListener('dblclick', Out, false);
-    } else {
-        img.attachEvent('ondblclick', Out);
-    }
+    
     bigimage.innerHTML = '';
     bigimage.appendChild(img);
     //bigimage.style.left = (getElementLeft(obj) - 0) + 'px';
