@@ -201,8 +201,58 @@ main {
     justify-content: space-between;
 }
 
-#footer-wrap>* {
+#footer-wrap>div:first-child,
+#footer-gruppeprod span{
     padding: 5px;
+    display: block;
+}
+
+#footer-gruppeprod {
+    position: relative;
+    width: 200px;
+    text-align: right;
+}
+
+#footer-credits-mask {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 200px;
+    overflow: hidden;
+}
+
+#footer-credits {
+    position: relative;
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.91);
+    width: 200px;
+    transform: translateY(100%); /* Start below the element */
+
+    /* Transitions below */
+    transition: transform 400ms ease;
+}
+
+#footer-credits h3 {
+    margin: 0 0 10px;
+}
+
+#footer-gruppeprod span {
+    text-decoration: underline;
+    cursor: help;
+}
+
+#footer-gruppeprod>span:hover {
+    text-decoration: none;
+}
+
+#footer-gruppeprod>span:hover ~ #footer-credits-mask #footer-credits,
+#footer-credits:hover {
+    transform: translateY(0);
+}
+
+#footer-credits a {
+    color: white;
 }
 
 /* Image figure styling */
