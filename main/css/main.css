@@ -201,8 +201,10 @@ main {
     justify-content: space-between;
 }
 
-#footer-wrap>* {
+#footer-wrap>div:first-child,
+#footer-gruppeprod span{
     padding: 5px;
+    display: block;
 }
 
 #footer-gruppeprod {
@@ -212,7 +214,6 @@ main {
 }
 
 #footer-credits-mask {
-    display: none;
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -221,37 +222,33 @@ main {
 }
 
 #footer-credits {
-    display: inherit;
     position: relative;
     padding: 10px;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.91);
     width: 200px;
-}
+    transform: translateY(100%); /* Start below the element */
 
-@keyframes credits {
-    from {top: 150px;}
-    to {top: 0px;}
-}
-
-@-webkit-keyframes credits {
-    from {top: 150px;}
-    to {top: 0px;}
+    /* Transitions below */
+    transition: transform 400ms ease;
 }
 
 #footer-credits h3 {
     margin: 0 0 10px;
 }
 
-#footer-gruppeprod:hover #footer-credits-mask {
-    display: block;
+#footer-gruppeprod span {
+    text-decoration: underline;
+    cursor: help;
 }
 
-#footer-gruppeprod:hover #footer-credits {
-    -webkit-animation-name: credits;
-    animation-name: credits;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
+#footer-gruppeprod>span:hover {
+    text-decoration: none;
+}
+
+#footer-gruppeprod>span:hover ~ #footer-credits-mask #footer-credits,
+#footer-credits:hover {
+    transform: translateY(0);
 }
 
 #footer-credits a {
