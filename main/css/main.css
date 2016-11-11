@@ -245,7 +245,7 @@ main {
 /* Style the Image Used to Trigger the Modal */
 .popup-picture {
     border-radius: 5px;
-    cursor: pointer;
+    cursor: zoom-in;
     transition: 0.3s;
 }
 
@@ -255,6 +255,7 @@ main {
 .modal {
     position: fixed; /* Stay in place */
     z-index: 15; /* Sit on top */
+    cursor: zoom-out;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -281,6 +282,7 @@ main {
     max-width: 80%;
 	max-height: calc(90vh - 50px);
     object-fit: contain;
+    cursor: zoom-out;
 }
 
 /* Add Animation */
