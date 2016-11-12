@@ -1,5 +1,17 @@
-addEvent(window, "click", closeModal); // If user clicks while modal is open, close it
+/* Author: Hans, Thomas
+Year: 2016
+Purpose: JavaScript for the modal popup pictures
+Filename: picturePopup.js */
 
+/*Inspirasjon hentet fra W3-Schools sin tutorial om modale bilder.
+http://www.w3schools.com/howto/howto_css_modal_images.asp
+
+Koden er endret flere steder for å legge til funksjonalitet til å passe siden vår bedre. */ 
+
+addEvent(window, "click", closeModal); 
+
+
+//Funksjon som legger til HTML'en som er nødvendig for de modale bildene inn i det relavante dokumentet
 function addModal() {
     let node1 = document.createElement('div');
     node1.setAttribute('id', 'myModal');
@@ -42,7 +54,6 @@ var closeModalTimeout = false;
 
 
 function modalPopup(event) {
-    // Get the image and insert it inside the modal
     var image_src;
     if (event.target.hasAttribute("data-HD-src")) {
         image_src = event.target.getAttribute("data-HD-src");
@@ -52,13 +63,11 @@ function modalPopup(event) {
     ModalEl.classList.remove("modal-hidden");
     ModalImgEl.src = image_src;
 
-    // Replace img element to trigger new animation run
     ModalImgEl.classList.add("modal-animate");
     var newElement = ModalImgEl.cloneNode(true);
     ModalImgEl.parentNode.replaceChild(newElement, ModalImgEl);
     ModalImgEl = newElement;
 
-    // Prevent clicks from instantly closing the modal
     setTimeout(function () {
         closeModalTimeout = true;
     }, 100);

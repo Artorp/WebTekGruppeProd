@@ -8,8 +8,6 @@ Modification history:
 */
 
 main{
-	/*border-style: solid;*/
-	/*border-color: red;*/
 	position: relative;
 }
 #form{
@@ -39,6 +37,11 @@ input{
 		margin: 20px auto;
 	}
 }
+
+/*
+Styling for innsendingsknappen
+************************************************************
+*/
 #send{
 	padding-top: auto;
 	width: 95px;

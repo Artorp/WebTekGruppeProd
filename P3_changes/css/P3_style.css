@@ -1,88 +1,91 @@
-/* Filename: P2_style.css */
-
+/* Filename: P3_style.css */
 /* Import Google Fonts */
 @import 'https://fonts.googleapis.com/css?family=Lora';
 
 /* CSS styling */
 html {
-	font-family: 'Lora', serif;
-	font-size: 1.25em;
+    font-family: 'Lora', serif;
+    font-size: 1.25em;
 }
 
 header div {
-	margin: 16px 0 8px;
+    margin: 16px 0 8px;
 }
 
 body {
-	max-width: 800px;
-	margin: 0 auto; /* center */
-	background-color: #eaeaea;
+    max-width: 800px;
+    margin: 0 auto; /* center */
+    background-color: #eaeaea;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Open sans", sans-serif;
+    font-family: "Open sans", sans-serif;
 }
 
 header,
 section { /* Box in the sections */
-	padding: 20px 50px;
-	margin: 10px 0;
-	background: #fff;
-	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    padding: 20px 50px;
+    margin: 10px 0;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
 header {
-	border-style: solid;
-	border-width: 1px;
-	border-color: rgb(200, 200, 200);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
 }
 
-main>:first-child {
-	border-radius: 6px 6px 0 0;
+main > :first-child {
+    border-radius: 6px 6px 0 0;
 }
 
-main>:last-child {
-	border-radius: 0 0 6px 6px;
+main > :last-child {
+    border-radius: 0 0 6px 6px;
 }
 
 footer {
-	padding: 0 15px;
-	margin: 10px 0;
-	font-size: 12px;
-	text-align: center;
-	opacity: 0.50;
+    padding: 0 15px;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.50;
 }
 
 h1 {
-	margin: 12px 0 21px;
+    margin: 12px 0 21px;
 }
 
 h2 {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 
 ol {
-	padding-left: 40px;
-	padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+li {
+    margin: 5px auto;
 }
 
 /* Image styling */
 
 figure {
-	margin: 0 auto;
-	padding: 20px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-figure>a {
-	display: inline-block;
-	position: relative;
-	opacity: 1;
-	-webkit-transition: opacity 150ms ease-in-out;
-	transition: opacity 150ms ease-in-out;
+figure > a {
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: opacity 150ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
 }
 
-figure>a:hover {
-	opacity: 0.85;
+figure > a:hover {
+    opacity: 0.85;
 }
 
 /* Inset box shadow
@@ -103,14 +106,14 @@ figure>a:hover::before {
 */
 
 img {
-	float: left; /* Float makes inset shadow work */
-	box-sizing: border-box;
-	width: 100%;
+    float: left; /* Float makes inset shadow work */
+    box-sizing: border-box;
+    width: 100%;
 }
 
 figcaption {
-	text-align: center;
-	font-size: 0.9em;
+    text-align: center;
+    font-size: 0.9em;
 }
 
 /* Table styling */
