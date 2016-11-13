@@ -3,6 +3,7 @@ When: November 2016
 Filename: gallery.css
 Purpose: CSS styling for "Bildegalleri"*/
 
+h1 { font-size: 2.5em }
 
 div.picelement {
 	margin: 5px;

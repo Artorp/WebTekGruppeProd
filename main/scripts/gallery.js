@@ -2,6 +2,7 @@
  When: November 2016
  Filename: gallery.js
  Purpose: Javascript for "Bildegalleri".
+ Mainly to show the concept of switching between big versions of the gallery pictures, with the help of javascript.
  */
 
 function Large(obj) { // Purpose: Create a big image that serve as the currently viewed picture.
