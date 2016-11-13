@@ -43,6 +43,8 @@ Filename: P4_testing.html
         <p>Målgruppen vår var studenter og unge voksne. Vi delte ut søknaden på Facebook-siden til de som går første
             året på Informatikk, og noen av de i den gruppen delte ut undersøkelsen videre. Vi traff målgruppen vår
             relativt bra, med 95,2% i alderen 18-27 og 90,5% studenter.</p>
+        <p>Vi gjennomførte også flere live-tester der vi observerte hvordan brukere brukte siden vår. Dette ga oss
+            verdifull innsikt i hvordan brukere bruker websida.</p>
     </section>
     <section>
         <h2>Test: Plattform</h2>
@@ -67,67 +69,69 @@ Filename: P4_testing.html
         <p>Sammendrag av hvor lang tid brukerne brukte på å finne informasjon om...</p>
         <table>
             <tr>
-                <th>Åpningstider</th>
-                <th>Veldig kort</th>
+                <td>Åpningstider</td>
+                <td>Veldig kort</td>
             </tr>
             <tr>
-                <th>Hvordan man finner frem tilkafeen</th>
-                <th>veldig kort</th>
+                <td>Hvordan man finner fram til kaféen</td>
+                <td>veldig kort</td>
             </tr>
             <tr>
-                <th>Hva som selges i kafeen</th>
-                <th>Relativ kort</th>
+                <td>Hva som selges i kaféen</td>
+                <td>Relativ kort</td>
             </tr>
             <tr>
-                <th>Hvilke arrangementer som holdes</th>
-                <th>Veldig kort</th>
+                <td>Hvilke arrangementer som holdes</td>
+                <td>Veldig kort</td>
             </tr>
             <tr>
-                <th>Kontaktinformasjon</th>
-                <th>Veldig kort</th>
+                <td>Kontaktinformasjon</td>
+                <td>Veldig kort</td>
             </tr>
             <tr>
-                <th>Generell informasjon om kafeen</th>
-                <th>Relativ kort</th>
+                <td>Generell informasjon om kaféen</td>
+                <td>Relativ kort</td>
             </tr>
             <tr>
-                <th>Hvordan man søker jobb</th>
-                <th>Relaiv kort</th>
+                <td>Hvordan man søker jobb</td>
+                <td>Relaiv kort</td>
             </tr>
         </table>
-        <p>Kommentarene var stort sett positive, vi fikk til og med en som ikke snakker flytende norsk til å prøve den,
-            og dne brukeren hadde ingen problemer med å finne fram.</p>
-        <p>Vi fikk klage på at det var noen feil på jobbsøknadssiden (og en sa at den ikke fungerte), at bildene i
-            galleriet kunne vært mer uniforme (i størrelse) og at sidene kunne vært mer uniforme med hverandre, samt og
-            ha avrundede hjørner på bildene.</p>
+        <p>Kommentarene var stort sett positive, vi fikk til og med en som ikke snakker flytende norsk til å navigere sida,
+            og denne brukeren hadde ingen problemer med å finne fram til informasjon om kaféen.</p>
+        <p>Vi fikk klage på at det var noen feil i webkonsollen på jobbsøknadssiden, at bildene i
+            galleriet kunne vært mer uniforme (i størrelse) og at sidene kunne vært mer konsistense med hverandre.</p>
+        <p>De endelige testresultatene kan finnes <a href="survey_results.pdf">her (PDF).</a></p>
 
     </section>
     <section>
         <h2>Vårt svar</h2>
-        <p>Feilen i jobbsøknaden er fikset, og en i gruppa kjenner persoenen som sa at siden ikke funket, det var ikke
-            en seriøs kommentar.<br>
-            Ting vi kan gjøre for å forbedre siden basert på tilbakemeldingen vi fikk, er å gjøre bildene i galleriet
-            mer uniforme, og å gjøre sidene mer uniforme, samt og ha avrundede hjørner på bildene.</p>
+        <p>Ting vi utredet i den endelige siden basert på feedback:</p>
+        <p>Feilmeldingen i webconsole når man besøker <code>jobs_application.html</code> ble fikset.</p>
+        <p>Brukere brukte lengre tid på å finne åpningstider enn ønsket, så åpningstider ble flyttet til en mer synlig posisjon.</p>
+        <hr>
+        <p>Ting vi kan gjøre for å forbedre siden basert på tilbakemeldingen vi fikk:</p>
+        <p>En av klagene var at siden kunne vært mer konsistent mht. stilen. Denne stilforskjellen stammer fra at vi fordelte ansvar for sidene mellom hverandre slik at forskjellige medlemmer fant fram til ulike løsninger i presentasjonen av innholdet. For å styrke helhetsbildet av nettsiden kunne vi jobbet med stylingen slik at sidene i større grad fulgte samme layout. Et eksempel er bilder på innsiden vs. på yttersiden av tekstbokser.</p>
+        <p>Vi fikk også tilbakemelding om at de mindre bildene i bildegalleriet hadde forskjellige størrelser. Dette er også en stilendring som vi kunne ha rettet på for at bildene skulle bli mer presentabel.</p>
     </section>
     <section>
         <h2>Selvrefleksjon</h2>
         <p>Dette prosjektet har lært oss mye både faglig og med tanke på samarbeid. Som det første store prosjektet vi
             har vært borti som informatikk-studenter, var det veldig mye som var nytt for oss da vi startet, og vi har
-            lært utrolig mye underveis.
-            Vi har nå erfart hvor mye arbeid som faktisk går med på å lage en hel nettside, fra planlegging til finnish.
+            lært utrolig mye underveis.</p>
+        <p>Vi har nå erfart hvor mye arbeid som faktisk går med på å lage en hel nettside, fra planlegging til finnish.
             Koding har vi stort sett lært underveis. Både HTML, CSS og Javascript var relativt nytt for flere av oss da
             vi startet. Prosjektet har vært et bra hjelpemiddel for å lære å bruke dette i praksis med konkrete
             eksempler. Vi har også erfart hvor nyttig det kan være å ikke bare bruke det du er vant til, men å prøve ut
-            nye ting og løsninger.
-            Foreksempel hadde vi et lite krasjkurs i bruken av git og github helt i starten, og brukt det for å få til
-            samarbeidet gjennom hele prosjektet.
-            Men vi har også lært en god del ting med tanke på samarbeid. Hvordan man kan bruke de forskjellige
+            nye ting og løsninger.</p>
+        <p>For eksempel hadde vi et lite krasjkurs i bruken av git og github helt i starten, og brukt det for å få til
+            samarbeidet gjennom hele prosjektet.</p>
+        <p>Men vi har også lært en god del ting med tanke på samarbeid. Hvordan man kan bruke de forskjellige
             kunnskapene og fordelene til alle sammen, og kombinere dette til å lage en knallgod nettside.
             Samarbeidet har fungert utrolig bra og vi har hatt regelmessige møter og hatt god kommunikasjon imellom
-            gruppemedlemmene. </p>
-        <br>
+            gruppemedlemmene.</p>
         <p> Alt i alt har dette vært en positiv og lærerik opplevelse som vi kommer til å ha stor nytte av i
-            framtida </p>
+            framtida.</p>
     </section>
 </main>
 <footer>
